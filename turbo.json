@@ -15,7 +15,13 @@
     },
     "dev": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "env": ["PORT", "NODE_ENV"]
+    },
+    "start": {
+      "cache": false,
+      "persistent": true,
+      "env": ["PORT", "NODE_ENV"]
     }
   }
 }

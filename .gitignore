@@ -7,11 +7,9 @@
 **/.turbo
 **/coverage
 pnpm-debug.log*
-**/*lock*.json
-**/*lock*.yaml
-**/*lock
 .pnp
 .pnp.js
+# 注意：pnpm-lock.yaml 必须提交（锁文件是 pnpm 的核心协作文件，不要 ignore）
 
 # Local env files
 .env
@@ -44,4 +42,4 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
-pnpm-lock.yaml
+**/.workbuddy/

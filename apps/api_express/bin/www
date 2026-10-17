@@ -11,8 +11,8 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
-
-var port = normalizePort(process.env.PORT || '3000');
+// 自定义api_express为3001，api_nest为3002，api_go为3003
+var port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
 /**

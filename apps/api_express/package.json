@@ -1,9 +1,13 @@
 {
-  "name": "api-express",
+  "name": "@repo/api_express",
   "version": "0.0.0",
   "private": true,
+  "description": "Express API —— 纯 CommonJS，运行时直接执行，无构建步骤",
   "scripts": {
-    "start": "node ./bin/www"
+    "dev": "nodemon --watch app.js --watch routes --watch bin --ext js,json ./bin/www",
+    "start": "node ./bin/www",
+    "build": "echo \"api_express: 无构建步骤，pnpm start 直接运行\"",
+    "lint": "node --check app.js && node --check routes/index.js && node --check routes/users.js && node --check bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -12,5 +16,8 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }

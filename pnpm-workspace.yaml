@@ -1,5 +1,8 @@
+# 工作区成员：apps/* 与 packages/* 下的每个含 package.json 的目录
 packages:
   - "apps/*"
   - "packages/*"
+
+# pnpm 11 默认禁止依赖执行 install/postinstall 构建脚本，需显式放行（值为布尔）
 allowBuilds:
-  unrs-resolver: set this to true or false
+  unrs-resolver: true
