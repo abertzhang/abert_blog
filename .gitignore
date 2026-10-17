@@ -43,3 +43,4 @@ yarn-error.log*
 .DS_Store
 *.pem
 **/.workbuddy/
+**/pnpm-lock.yaml
