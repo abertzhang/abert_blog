@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0.0",
+  "state": "sector-contract-ready",
+  "sector": "general",
+  "deliverable": "website",
+  "page_context": "website",
+  "design_target": "web",
+  "source_brief": {
+    "path": ".design-suite/source-brief.json",
+    "normalized_path": ".design-suite/normalized-brief.json",
+    "route_path": ".design-suite/route.json",
+    "compiled_route_contract": ".design-suite/compiled-route-contract.json",
+    "request_text": "在ui目录下生成一套个人博客UI,只设计web端的页面,文章分类包括Flutter,React,NodeJs,以及Golang"
+  },
+  "delivery_adapter": "static-export",
+  "delivery_format": "single-html",
+  "export_mode": "single-file",
+  "asset_policy": "inline-base64",
+  "data_source": "static",
+  "network_dependencies": [],
+  "navigation_mode": "same-document",
+  "visual_direction": {
+    "kind": "design-hypothesis",
+    "label": "极简白底 / 深色文字（一次性设计假设）",
+    "status": "one-time-hypothesis",
+    "validated_profile": false,
+    "reason": "用户在 design-style-core 的 8 类网站风格族中选择了 planned 的极简风；按 AGENTS.md，planned 风格没有可执行 Profile，只能在 ①一次性 design-hypothesis 与 ②新建并验证 Profile 之间选择，用户选择 ①，因此本视觉方向不作为可复用、已验证的 Profile 记录。",
+    "confirmed_by_user": true,
+    "source_evidence": ["user-request: 视觉风格选择「极简白底 + 深色文字」"]
+  },
+  "page": {
+    "product_domain": null,
+    "domain_overlay": null,
+    "domain_requirements": [
+      "静态内容型页面：文章列表、分类归档、文章正文与个人介绍",
+      "Web 端优先，窄屏（320px / 390px）必须完成重排且无横向溢出",
+      "不使用外部字体、图标库、图片或任何网络请求"
+    ],
+    "style_family": "minimal",
+    "style_label": "极简风（极简白底 + 深色文字）",
+    "style_status": "planned",
+    "style_profile_id": null,
+    "product_scope": "not-applicable",
+    "page_task": "editorial-content",
+    "content_archetype": null,
+    "audience": "mixed",
+    "primary_action": "阅读文章",
+    "trust_strategy": "editorial-authority",
+    "media_strategy": "type-led",
+    "motion_level": "restrained",
+    "content_density": "medium",
+    "locale": "zh-CN",
+    "composition_mode": null,
+    "pages": [
+      {
+        "id": "home",
+        "path": "doc/ui/index.html",
+        "purpose": "首页：站点头部导航 + 分类入口 + 最新文章列表"
+      },
+      {
+        "id": "category",
+        "path": "doc/ui/category.html",
+        "purpose": "分类页：Flutter / React / NodeJs / Golang 四分类切换与文章归档"
+      },
+      {
+        "id": "article",
+        "path": "doc/ui/article.html",
+        "purpose": "文章详情：标题、元信息、正文、代码块、标签与上下篇"
+      },
+      {
+        "id": "about",
+        "path": "doc/ui/about.html",
+        "purpose": "关于页：个人简介、技术栈、联系方式与站点说明"
+      }
+    ]
+  },
+  "facts": {
+    "supplied": [
+      {
+        "field": "organization_name",
+        "value": "abert 博客",
+        "source": "user-request: 个人博客（宿主仓库名 abert_blog）；站点名为设计占位，待用户确认"
+      },
+      {
+        "field": "services",
+        "value": "个人技术博客，输出 Flutter / React / NodeJs / Golang 四类技术文章",
+        "source": "user-request: 文章分类包括 Flutter,React,NodeJs,以及Golang"
+      }
+    ],
+    "unresolved": [
+      "locations",
+      "dates",
+      "pricing",
+      "contacts",
+      "customers",
+      "metrics",
+      "credentials",
+      "availability",
+      "站点名称与博主展示名仅为占位（abert / abert 博客），未由用户确认",
+      "联系方式为示例占位（hello@example.com、github.com/yourname），不得作为真实联系方式发布",
+      "文章标题、正文、日期、阅读时长均为界面演示用示例内容，不构成真实文章事实"
+    ],
+    "creative_additions": [
+      {
+        "field": "author_display_name",
+        "value": "abert",
+        "label": "示例占位，非用户提供的真实姓名"
+      },
+      {
+        "field": "sample_articles",
+        "value": "四类技术栈各 3 篇示例文章（共 12 篇）",
+        "label": "界面演示用示例内容"
+      },
+      {
+        "field": "navigation_structure",
+        "value": "首页 / 分类 / 关于 顶部导航 + 文章详情页",
+        "label": "设计决策"
+      },
+      {
+        "field": "sample_contact_placeholders",
+        "value": "hello@example.com、github.com/yourname",
+        "label": "示例占位，发布前必须替换"
+      }
+    ]
+  },
+  "media": {
+    "generation_mode": "disabled",
+    "media_required": false,
+    "provider": null,
+    "supplied_assets": [],
+    "generated_assets": [],
+    "missing_assets": [],
+    "runtime_status": "not-needed",
+    "rationale": "内容型博客以排版与代码为信息主体（media_strategy: type-led），用户未要求配图，本次不生成任何图片，也不留媒体槽位。"
+  },
+  "design": {
+    "thesis": "个人技术博客的读者来读文章：以白底正文排版承载权威感，用克制的字号层级、细线分隔与单一强调色把注意力集中在标题、摘要与代码上；不用图片、图标或装饰动效争夺注意力。",
+    "composition": {
+      "catalog": null,
+      "mode": null,
+      "path": null,
+      "section_contract_loaded": false
+    },
+    "first_viewport": "站点头部（站点名 + 首页/分类/关于导航）与首条文章标题、摘要、元信息同屏出现，并在折叠线附近露出第二条文章，提示下方内容可继续阅读。",
+    "sections": [
+      {
+        "id": "site-header",
+        "purpose": "站内定位与导航",
+        "proof": "站点名 + 三个一级入口",
+        "layout": "单行左侧品牌、右侧导航；窄屏折行",
+        "media": "无",
+        "states": []
+      },
+      {
+        "id": "category-entry",
+        "purpose": "让读者按技术栈进入",
+        "proof": "Flutter / React / NodeJs / Golang 四个分类及文章数",
+        "layout": "四列等宽卡片（窄屏两列 / 单列）",
+        "media": "无",
+        "states": []
+      },
+      {
+        "id": "post-list",
+        "purpose": "呈现最新文章",
+        "proof": "标题、摘要、日期、分类、阅读时长",
+        "layout": "单栏列表，条目间细线分隔",
+        "media": "无",
+        "states": []
+      },
+      {
+        "id": "post-body",
+        "purpose": "承载正文与代码",
+        "proof": "带语言标注的代码块、引用、列表",
+        "layout": "约 720px 阅读栏，代码块横向可滚",
+        "media": "无",
+        "states": []
+      },
+      {
+        "id": "post-footer",
+        "purpose": "继续阅读",
+        "proof": "标签与上一篇 / 下一篇",
+        "layout": "标签行 + 两列相邻文章",
+        "media": "无",
+        "states": []
+      },
+      {
+        "id": "about-body",
+        "purpose": "介绍作者与站点",
+        "proof": "简介、技术栈、联系方式、站点说明",
+        "layout": "单栏分段",
+        "media": "无",
+        "states": []
+      },
+      {
+        "id": "site-footer",
+        "purpose": "站点边界说明",
+        "proof": "版权与示例数据声明",
+        "layout": "单行",
+        "media": "无",
+        "states": []
+      }
+    ],
+    "tokens": {
+      "color": {
+        "background": "#ffffff",
+        "surface_muted": "#f7f7f5",
+        "text_primary": "#111318",
+        "text_secondary": "#6f7480",
+        "border": "#e6e6e3",
+        "accent": "#14427f"
+      },
+      "typography": {
+        "sans": "-apple-system, \"SF Pro Text\", \"PingFang SC\", \"Helvetica Neue\", Arial, sans-serif",
+        "mono": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace",
+        "base_size_px": 16,
+        "line_height": 1.75,
+        "scale": { "h1": 34, "h2": 24, "h3": 18, "body": 16, "meta": 13 }
+      },
+      "spacing": { "unit_px": 8, "section_gap_px": 64, "block_gap_px": 24 },
+      "radius_px": 6,
+      "container_px": 1120,
+      "reading_column_px": 720,
+      "breakpoints_px": [720, 1024],
+      "motion": {
+        "level": "restrained",
+        "duration_ms": 160,
+        "easing": "ease-out",
+        "reduced_motion": "prefers-reduced-motion: reduce 时移除过渡"
+      }
+    },
+    "avoid": [
+      "不使用图标库、装饰性插画、渐变色块或大面积色块",
+      "不使用外部字体、CDN、图片或任何网络请求",
+      "不使用深色模式自动反色（本次仅交付白底深色文字一体方案）",
+      "不使用叙事型滚动动效、视差或自动轮播"
+    ]
+  },
+  "responsive": {
+    "mobile_layout": "required",
+    "viewport_matrix": [
+      "320x568",
+      "390x844",
+      "768x1024",
+      "1440x1000",
+      "1920x1080",
+      "2560x1080"
+    ],
+    "container_invariants": [
+      "阅读栏最大宽度 720px 且始终水平居中",
+      "站点容器最大宽度 1120px，两侧留白随视口增大而增加",
+      "任何视口下 documentElement 不得出现横向滚动（scrollWidth <= clientWidth）",
+      "代码块在窄屏内横向滚动，不撑破布局"
+    ],
+    "geometry_evidence": ".design-suite/evidence/（每页 <page>-static-export-evidence.json，含六档视口结构 / 离线 / 渲染 / 控制台 / 响应式与横向溢出判定）"
+  },
+  "accessibility": {
+    "target": "WCAG 2.1 AA：正文与背景对比度 >= 7:1，次要文字 >= 4.5:1，强调色用于链接时 >= 4.5:1",
+    "keyboard": "全部导航、分类切换与链接可用 Tab 到达并激活；分类切换使用可聚焦控件而非仅靠鼠标",
+    "focus": "使用 :focus-visible 提供清晰可见的 2px 强调色焦点环，不依赖颜色填充",
+    "reduced_motion": "尊重 prefers-reduced-motion: reduce，关闭全部过渡与动画"
+  },
+  "downstream_capabilities": [],
+  "deviations": [
+    {
+      "id": "planned-style-without-executable-profile",
+      "status": "blocking-suite-gate",
+      "detail": "极简风（style_family: minimal）在 website-style-taxonomy.json 中为 planned、profile_id 为 null，按 AGENTS.md 已在 ①一次性 design-hypothesis 与 ②新建 Profile 之间选择 ①。因此 page.style_profile_id 无法引用可执行 Profile，validate_sector_contract.py 在 page.style_profile_id 这一条上失败。",
+      "impact": "该条是套件侧 Profile 门禁的已知失败项，本交付不声称已通过。static-export 的合同门禁 validateStaticExportContract 不校验 style_profile_id，export_static_html.mjs 与 verify_static_export.mjs 均已实际运行并通过（结构 / 离线 / 渲染 / 控制台 / 响应式，覆盖 320x568 / 390x844 / 768x1024 / 1440x1000 / 1920x1080 / 2560x1080 六档），证据见 .design-suite/evidence/。"
+    },
+    {
+      "id": "multi-file-directory-override",
+      "status": "user-mandated-override",
+      "detail": "用户要求「在 ui 目录下」生成一套 UI、每页一个 HTML，交付位置为 doc/ui 目录，与 static-export 的单一 single-file 交付假设存在张力。按规则优先级（用户明确要求优先），按 4 个文件交付，站内互相跳转使用相对链接。",
+      "impact": "navigation_mode 仍按 static-export 记录为 same-document，但实际交付为 4 个互相链接的静态文件。"
+    },
+    {
+      "id": "sample-content",
+      "status": "placeholder",
+      "detail": "文章标题、正文、日期、阅读时长、联系方式、站点名均为界面演示占位内容。",
+      "impact": "不得作为真实发布内容；发布前需替换为真实信息。"
+    }
+  ]
+}

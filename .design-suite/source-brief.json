@@ -1,0 +1,12 @@
+{
+  "request_text": "在ui目录下生成一套个人博客UI,只设计web端的页面,文章分类包括Flutter,React,NodeJs,以及Golang",
+  "site_type": "personal-blog",
+  "output_path": "doc/ui",
+  "target_platforms": ["web"],
+  "article_categories": ["Flutter", "React", "NodeJs", "Golang"],
+  "pages": ["home", "category", "article-detail", "about"],
+  "visual_direction": "极简白底 + 深色文字",
+  "backend_integration": false,
+  "delivery_form": "one-self-contained-html-per-page",
+  "language": "zh-CN"
+}

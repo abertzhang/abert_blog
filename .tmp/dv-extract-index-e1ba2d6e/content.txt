@@ -1,0 +1,71 @@
+[html:l1] 跳到正文
+[html:l2] abert 博客
+[html:l3] 首页
+[html:l4] Flutter
+[html:l5] React
+[html:l6] NodeJs
+[html:l7] Golang
+[html:l8] 关于
+[html:l10] 个人技术博客
+[html:l12] abert 博客
+[html:l14] 记录 Flutter、React、NodeJs 与 Golang 的工程实践：写清楚一次更新的代价、一段代码的边界，以及问题真正被定位的那个瞬间。
+[html:l16] 最新文章
+[html:l17] 查看全部分类
+[html:l18] Go 服务可观测性：pprof 与 trace 上手
+[html:l20] Golang
+[html:l21] ·
+[html:l22] 2026-10-14
+[html:l23] ·
+[html:l24] 10 分钟阅读
+[html:l26] 用标准库工具定位 CPU 热点、阻塞与内存分配，附一套可以直接复制的接入方式。
+[html:l28] Node.js 内存泄漏排查实战
+[html:l30] NodeJs
+[html:l31] ·
+[html:l32] 2026-10-10
+[html:l33] ·
+[html:l34] 11 分钟阅读
+[html:l36] 从堆快照对比到对象增长追踪，还原一次线上内存持续上涨的完整定位过程。
+[html:l38] 大型 React 应用的目录与状态边界
+[html:l40] React
+[html:l41] ·
+[html:l42] 2026-10-06
+[html:l43] ·
+[html:l44] 9 分钟阅读
+[html:l46] 组件数量过百之后，目录结构与状态归属比抽象层次更能决定项目还能不能维护。
+[html:l48] Flutter 性能调优：帧率、内存与启动耗时
+[html:l50] Flutter
+[html:l51] ·
+[html:l52] 2026-10-01
+[html:l53] ·
+[html:l54] 10 分钟阅读
+[html:l56] 用 DevTools 定位掉帧与内存增长，给出一套可复用的排查顺序和几个常见的误判。
+[html:l58] Go 并发模型：从 goroutine 到结构化并发
+[html:l60] Golang
+[html:l61] ·
+[html:l62] 2026-09-18
+[html:l63] ·
+[html:l64] 13 分钟阅读
+[html:l66] context、errgroup 与生命周期管理，让并发任务的退出路径重新变得可读。
+[html:l68] 用 Fastify 构建可观测的 API 服务
+[html:l70] NodeJs
+[html:l71] ·
+[html:l72] 2026-09-15
+[html:l73] ·
+[html:l74] 12 分钟阅读
+[html:l76] 从日志、指标到链路追踪，把可观测性当作接口设计的一部分，而不是上线后补的补丁。
+[html:l78] 文章分类
+[html:l79] 共 4 个分类 · 12 篇文章
+[html:l81] Flutter
+[html:l83] 3 篇文章
+[html:l85] Dart 与 Flutter 工程的渲染、状态与性能实践。
+[html:l87] React
+[html:l89] 3 篇文章
+[html:l91] React 运行时、状态同步与大型应用的工程组织。
+[html:l93] NodeJs
+[html:l95] 3 篇文章
+[html:l97] Node.js 运行时行为、服务端工程与线上问题排查。
+[html:l99] Golang
+[html:l101] 3 篇文章
+[html:l103] Go 语言特性、并发模型与服务端工程实践。
+[html:l105] © 2026 abert 博客 · 界面演示稿，文章与联系方式均为示例内容
+[html:l107] Flutter · React · NodeJs · Golang

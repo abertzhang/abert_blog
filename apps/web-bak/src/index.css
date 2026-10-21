@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0D9488;
+  --color-primary-light: #CCFBF1;
+  --color-ink-900: #0F172A;
+  --color-ink-600: #475569;
+  --color-canvas: #F1F5F9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+  background: #F1F5F9;
+  color: #0F172A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .container-page { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .card { @apply bg-white border border-ink-200/70 rounded-xl shadow-card; }
+  .btn { @apply inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition disabled:opacity-50 disabled:pointer-events-none; }
+  .btn-primary { @apply btn bg-primary text-white hover:bg-primary-dark shadow-sm; }
+  .btn-ghost { @apply btn bg-white text-ink-800 border border-ink-200/80 hover:border-primary hover:text-primary; }
+  .btn-dark { @apply btn bg-ink-900 text-white hover:bg-ink-800; }
+  .tag { @apply inline-flex items-center gap-1 px-3 py-1 text-xs font-medium rounded-md border border-ink-200/80 bg-white text-ink-600 hover:border-primary hover:text-primary transition cursor-pointer; }
+  .badge { @apply inline-flex items-center px-2 py-0.5 text-xs font-medium rounded; }
+  .badge-published { @apply badge bg-primary-light text-primary-dark; }
+  .badge-draft { @apply badge bg-slate-100 text-ink-600; }
+  .badge-pinned { @apply badge bg-amber-50 text-amber-700; }
+  .section-title { @apply flex items-center gap-2 text-lg font-semibold text-ink-900; }
+  .section-title::before { content: ''; @apply w-1 h-5 bg-primary rounded-sm; }
+  .link-primary { @apply text-primary hover:underline; }
+}
+
+/* Markdown prose (基于设计稿排版) */
+.markdown-body { @apply text-ink-800 leading-relaxed; }
+.markdown-body h1 { @apply text-2xl font-bold mt-6 mb-3 text-ink-900; }
+.markdown-body h2 { @apply text-xl font-bold mt-6 mb-3 text-ink-900 border-l-4 border-primary pl-3; }
+.markdown-body h3 { @apply text-lg font-semibold mt-5 mb-2 text-ink-900; }
+.markdown-body p { @apply my-3 text-ink-600 leading-7; }
+.markdown-body pre { @apply bg-ink-900 text-slate-200 p-4 rounded-lg overflow-auto font-mono text-sm my-4; }
+.markdown-body code { @apply bg-slate-100 text-primary-dark px-1.5 py-0.5 rounded text-sm font-mono; }
+.markdown-body pre code { @apply bg-transparent text-slate-200 p-0; }
+.markdown-body blockquote { @apply border-l-4 border-primary bg-primary-light/40 pl-4 py-2 my-4 text-ink-600 italic; }
+.markdown-body a { @apply text-primary hover:underline; }
+.markdown-body ul { @apply list-disc pl-6 my-3 text-ink-600; }
+.markdown-body ol { @apply list-decimal pl-6 my-3 text-ink-600; }
+.markdown-body img { @apply max-w-full rounded-lg my-3; }
+.markdown-body table { @apply w-full my-4 text-sm border-collapse; }
+.markdown-body th, .markdown-body td { @apply border border-ink-200/70 px-3 py-2; }
+.markdown-body th { @apply bg-slate-50 font-semibold; }
+
+/* 滚动条美化 */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { @apply bg-ink-200 rounded-full; }
+::-webkit-scrollbar-thumb:hover { @apply bg-ink-400; }
+
+/* ===== 标签云漂浮动画 =====
+   每个词是一个独立的 CSS 动画实例，通过内联 CSS 变量注入各自的运动参数：
+   --dx/--dy 漂移幅度、--r0/--r1 起止旋转角、--s0/--s1 起止缩放（体现景深）、
+   --ob 基础不透明度、--z0/--z1 前后层次、--b1 远景虚化。
+   时长与负延迟由内联 style 给出，保证每个词节奏不同、不会同步运动。
+   关键设计：0%/100% 词完全回到原始位置（即静止圆螺旋布局），
+   仅在 50% 时偏移到最远。这样用户刷新页面看到的就是完整圆形，不会"找不到词"。
+   整体运动像呼吸——稳定为常态，偏移是短暂峰值。 */
+@keyframes wc-float {
+  0%, 100% {
+    transform: translate(-50%, -50%) translate(0, 0) rotate(var(--r0)) scale(var(--s0));
+    opacity: var(--ob);
+    filter: blur(0);
+    z-index: var(--z0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(var(--dx), var(--dy)) rotate(var(--r1)) scale(var(--s1));
+    opacity: var(--ob);
+    filter: blur(var(--b1));
+    z-index: var(--z1);
+  }
+}
+
+/* 鼠标悬停时暂停漂浮，方便点击；同时提亮到全不透明 */
+.wc-item:hover {
+  animation-play-state: paused !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* 尊重系统「减少动态效果」设置：关闭漂浮，回到静态排布 */
+@media (prefers-reduced-motion: reduce) {
+  .wc-item { animation: none !important; }
+}

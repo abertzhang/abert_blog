@@ -1,0 +1,74 @@
+- generic [active] [ref=e1]:
+  - link "跳到正文" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "abert 博客" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+      - navigation "站点导航" [ref=e6]:
+        - link "首页" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+        - link "Flutter" [ref=e8] [cursor=pointer]:
+          - /url: category.html#flutter
+        - link "React" [ref=e9] [cursor=pointer]:
+          - /url: category.html#react
+        - link "NodeJs" [ref=e10] [cursor=pointer]:
+          - /url: category.html#nodejs
+        - link "Golang" [ref=e11] [cursor=pointer]:
+          - /url: category.html#golang
+        - link "关于" [ref=e12] [cursor=pointer]:
+          - /url: about.html
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - paragraph [ref=e16]: 关于
+        - heading "关于本站" [level=1] [ref=e17]
+        - paragraph [ref=e18]: 一个只写长文的技术博客：把一个问题的来龙去脉写清楚，而不是只给出可以复制的答案。
+      - generic [ref=e19]:
+        - heading "个人简介" [level=2] [ref=e20]
+        - paragraph [ref=e21]: 我是 abert，客户端与服务端都写。日常工作集中在跨端应用的性能与架构，以及支撑它的服务端工程与可观测性建设。
+        - paragraph [ref=e22]: 这个博客用来存放那些在项目里被反复问起、但很少被完整写下来的问题：为什么这样设计、边界在哪里、当时的取舍是什么。文章尽量给出可验证的判断依据，而不是模糊的经验之谈。
+      - generic [ref=e23]:
+        - heading "技能与技术栈" [level=2] [ref=e24]
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - term [ref=e27]: Flutter
+            - definition [ref=e28]: Dart、Riverpod / Bloc、自定义绘制与渲染管线、DevTools 性能分析
+          - generic [ref=e29]:
+            - term [ref=e30]: React
+            - definition [ref=e31]: Hooks 与并发特性、状态同步、组件库设计与大型应用结构
+          - generic [ref=e32]:
+            - term [ref=e33]: NodeJs
+            - definition [ref=e34]: HTTP 服务与网关、异步 IO 与事件循环、内存与性能排查
+          - generic [ref=e35]:
+            - term [ref=e36]: Golang
+            - definition [ref=e37]: 并发模型与 context、泛型、服务可观测性与 pprof 分析
+          - generic [ref=e38]:
+            - term [ref=e39]: 工程与工具
+            - definition [ref=e40]: TypeScript、CI 流水线、可观测性建设、性能与稳定性治理
+      - generic [ref=e41]:
+        - heading "联系方式" [level=2] [ref=e42]
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - term [ref=e45]: 邮箱
+            - definition [ref=e46]:
+              - link "hello@example.com" [ref=e47] [cursor=pointer]:
+                - /url: mailto:hello@example.com
+          - generic [ref=e48]:
+            - term [ref=e49]: GitHub
+            - definition [ref=e50]: github.com/yourname
+          - generic [ref=e51]:
+            - term [ref=e52]: 本站内容
+            - definition [ref=e53]: 长文笔记与技术复盘，不转载、不投放广告
+        - paragraph [ref=e54]: 以上为演示占位信息，正式发布前需替换为真实联系方式。
+      - generic [ref=e55]:
+        - heading "站点说明" [level=2] [ref=e56]
+        - list [ref=e57]:
+          - listitem [ref=e58]: 内容范围：Flutter、React、NodeJs 与 Golang 四类技术文章。
+          - listitem [ref=e59]: 更新节奏：以完整长文为主，不追求高频更新。
+          - listitem [ref=e60]: 阅读体验：正文单栏排版，代码块可横向滚动，不加载任何外部资源。
+          - listitem [ref=e61]: 本站为纯静态界面稿，不包含后台、评论与订阅功能。
+  - contentinfo [ref=e62]:
+    - generic [ref=e63]:
+      - paragraph [ref=e64]: © 2026 abert 博客 · 界面演示稿，文章与联系方式均为示例内容
+      - paragraph [ref=e65]: Flutter · React · NodeJs · Golang

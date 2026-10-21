@@ -1,0 +1,41 @@
+[html:l1] 跳到正文
+[html:l2] abert 博客
+[html:l3] 首页
+[html:l4] Flutter
+[html:l5] React
+[html:l6] NodeJs
+[html:l7] Golang
+[html:l8] 关于
+[html:l10] 分类
+[html:l12] 文章分类
+[html:l14] 按技术栈归档：Flutter、React、NodeJs 与 Golang。每个分类下按发布时间由新到旧排列。
+[html:l16] Flutter（3）
+[html:l17] React（3）
+[html:l18] NodeJs（3）
+[html:l19] Golang（3）
+[html:l20] Flutter
+[html:l21] 3 篇文章
+[html:l23] Dart 与 Flutter 工程的渲染、状态与性能实践。
+[html:l25] Flutter 渲染管线：从 Widget 到 Layer 的完整链路
+[html:l27] Flutter
+[html:l28] ·
+[html:l29] 2026-08-12
+[html:l30] ·
+[html:l31] 9 分钟阅读
+[html:l33] 把 Build、Layout、Paint、Composite 四个阶段拆开看，理解为什么一次 setState 的代价常常不在你以为的地方。
+[html:l35] 用 Riverpod 重构状态层：一次真实项目的取舍
+[html:l37] Flutter
+[html:l38] ·
+[html:l39] 2026-09-03
+[html:l40] ·
+[html:l41] 12 分钟阅读
+[html:l43] 从 Provider 迁移到 Riverpod 的完整过程、中途踩到的坑，以及什么时候你不该引入全局状态容器。
+[html:l45] Flutter 性能调优：帧率、内存与启动耗时
+[html:l47] Flutter
+[html:l48] ·
+[html:l49] 2026-10-01
+[html:l50] ·
+[html:l51] 10 分钟阅读
+[html:l53] 用 DevTools 定位掉帧与内存增长，给出一套可复用的排查顺序和几个常见的误判。
+[html:l55] © 2026 abert 博客 · 界面演示稿，文章与联系方式均为示例内容
+[html:l57] Flutter · React · NodeJs · Golang

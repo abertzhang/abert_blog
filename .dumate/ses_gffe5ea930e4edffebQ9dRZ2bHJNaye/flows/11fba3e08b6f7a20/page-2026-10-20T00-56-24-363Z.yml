@@ -1,0 +1,126 @@
+- generic [active] [ref=e1]:
+  - link "跳到正文" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "abert 博客" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+      - navigation "站点导航" [ref=e6]:
+        - link "首页" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+        - link "Flutter" [ref=e8] [cursor=pointer]:
+          - /url: category.html#flutter
+        - link "React" [ref=e9] [cursor=pointer]:
+          - /url: category.html#react
+        - link "NodeJs" [ref=e10] [cursor=pointer]:
+          - /url: category.html#nodejs
+        - link "Golang" [ref=e11] [cursor=pointer]:
+          - /url: category.html#golang
+        - link "关于" [ref=e12] [cursor=pointer]:
+          - /url: about.html
+  - main [ref=e13]:
+    - generic [ref=e15]:
+      - paragraph [ref=e16]: 个人技术博客
+      - heading "abert 博客" [level=1] [ref=e17]
+      - paragraph [ref=e18]: 记录 Flutter、React、NodeJs 与 Golang 的工程实践：写清楚一次更新的代价、一段代码的边界，以及问题真正被定位的那个瞬间。
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - heading "最新文章" [level=2] [ref=e22]
+        - link "查看全部分类" [ref=e23] [cursor=pointer]:
+          - /url: category.html
+      - list [ref=e24]:
+        - listitem [ref=e25]:
+          - heading "Go 服务可观测性：pprof 与 trace 上手" [level=3] [ref=e26]:
+            - link "Go 服务可观测性：pprof 与 trace 上手" [ref=e27] [cursor=pointer]:
+              - /url: article.html
+          - paragraph [ref=e28]:
+            - generic [ref=e29]: Golang
+            - generic [ref=e30]: ·
+            - time [ref=e31]: 2026-10-14
+            - generic [ref=e32]: ·
+            - generic [ref=e33]: 10 分钟阅读
+          - paragraph [ref=e34]: 用标准库工具定位 CPU 热点、阻塞与内存分配，附一套可以直接复制的接入方式。
+        - listitem [ref=e35]:
+          - heading "Node.js 内存泄漏排查实战" [level=3] [ref=e36]:
+            - link "Node.js 内存泄漏排查实战" [ref=e37] [cursor=pointer]:
+              - /url: article.html
+          - paragraph [ref=e38]:
+            - generic [ref=e39]: NodeJs
+            - generic [ref=e40]: ·
+            - time [ref=e41]: 2026-10-10
+            - generic [ref=e42]: ·
+            - generic [ref=e43]: 11 分钟阅读
+          - paragraph [ref=e44]: 从堆快照对比到对象增长追踪，还原一次线上内存持续上涨的完整定位过程。
+        - listitem [ref=e45]:
+          - heading "大型 React 应用的目录与状态边界" [level=3] [ref=e46]:
+            - link "大型 React 应用的目录与状态边界" [ref=e47] [cursor=pointer]:
+              - /url: article.html
+          - paragraph [ref=e48]:
+            - generic [ref=e49]: React
+            - generic [ref=e50]: ·
+            - time [ref=e51]: 2026-10-06
+            - generic [ref=e52]: ·
+            - generic [ref=e53]: 9 分钟阅读
+          - paragraph [ref=e54]: 组件数量过百之后，目录结构与状态归属比抽象层次更能决定项目还能不能维护。
+        - listitem [ref=e55]:
+          - heading "Flutter 性能调优：帧率、内存与启动耗时" [level=3] [ref=e56]:
+            - link "Flutter 性能调优：帧率、内存与启动耗时" [ref=e57] [cursor=pointer]:
+              - /url: article.html
+          - paragraph [ref=e58]:
+            - generic [ref=e59]: Flutter
+            - generic [ref=e60]: ·
+            - time [ref=e61]: 2026-10-01
+            - generic [ref=e62]: ·
+            - generic [ref=e63]: 10 分钟阅读
+          - paragraph [ref=e64]: 用 DevTools 定位掉帧与内存增长，给出一套可复用的排查顺序和几个常见的误判。
+        - listitem [ref=e65]:
+          - heading "Go 并发模型：从 goroutine 到结构化并发" [level=3] [ref=e66]:
+            - link "Go 并发模型：从 goroutine 到结构化并发" [ref=e67] [cursor=pointer]:
+              - /url: article.html
+          - paragraph [ref=e68]:
+            - generic [ref=e69]: Golang
+            - generic [ref=e70]: ·
+            - time [ref=e71]: 2026-09-18
+            - generic [ref=e72]: ·
+            - generic [ref=e73]: 13 分钟阅读
+          - paragraph [ref=e74]: context、errgroup 与生命周期管理，让并发任务的退出路径重新变得可读。
+        - listitem [ref=e75]:
+          - heading "用 Fastify 构建可观测的 API 服务" [level=3] [ref=e76]:
+            - link "用 Fastify 构建可观测的 API 服务" [ref=e77] [cursor=pointer]:
+              - /url: article.html
+          - paragraph [ref=e78]:
+            - generic [ref=e79]: NodeJs
+            - generic [ref=e80]: ·
+            - time [ref=e81]: 2026-09-15
+            - generic [ref=e82]: ·
+            - generic [ref=e83]: 12 分钟阅读
+          - paragraph [ref=e84]: 从日志、指标到链路追踪，把可观测性当作接口设计的一部分，而不是上线后补的补丁。
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - heading "文章分类" [level=2] [ref=e88]
+        - generic [ref=e89]: 共 4 个分类 · 12 篇文章
+      - generic [ref=e90]:
+        - link "Flutter 3 篇文章 Dart 与 Flutter 工程的渲染、状态与性能实践。" [ref=e91] [cursor=pointer]:
+          - /url: category.html#flutter
+          - paragraph [ref=e92]: Flutter
+          - paragraph [ref=e93]: 3 篇文章
+          - paragraph [ref=e94]: Dart 与 Flutter 工程的渲染、状态与性能实践。
+        - link "React 3 篇文章 React 运行时、状态同步与大型应用的工程组织。" [ref=e95] [cursor=pointer]:
+          - /url: category.html#react
+          - paragraph [ref=e96]: React
+          - paragraph [ref=e97]: 3 篇文章
+          - paragraph [ref=e98]: React 运行时、状态同步与大型应用的工程组织。
+        - link "NodeJs 3 篇文章 Node.js 运行时行为、服务端工程与线上问题排查。" [ref=e99] [cursor=pointer]:
+          - /url: category.html#nodejs
+          - paragraph [ref=e100]: NodeJs
+          - paragraph [ref=e101]: 3 篇文章
+          - paragraph [ref=e102]: Node.js 运行时行为、服务端工程与线上问题排查。
+        - link "Golang 3 篇文章 Go 语言特性、并发模型与服务端工程实践。" [ref=e103] [cursor=pointer]:
+          - /url: category.html#golang
+          - paragraph [ref=e104]: Golang
+          - paragraph [ref=e105]: 3 篇文章
+          - paragraph [ref=e106]: Go 语言特性、并发模型与服务端工程实践。
+  - contentinfo [ref=e107]:
+    - generic [ref=e108]:
+      - paragraph [ref=e109]: © 2026 abert 博客 · 界面演示稿，文章与联系方式均为示例内容
+      - paragraph [ref=e110]: Flutter · React · NodeJs · Golang

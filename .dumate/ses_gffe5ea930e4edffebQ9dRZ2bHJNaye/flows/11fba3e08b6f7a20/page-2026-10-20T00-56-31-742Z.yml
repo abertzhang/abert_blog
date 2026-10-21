@@ -1,0 +1,78 @@
+- generic [active] [ref=e1]:
+  - link "跳到正文" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "abert 博客" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+      - navigation "站点导航" [ref=e6]:
+        - link "首页" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+        - link "Flutter" [ref=e8] [cursor=pointer]:
+          - /url: category.html#flutter
+        - link "React" [ref=e9] [cursor=pointer]:
+          - /url: category.html#react
+        - link "NodeJs" [ref=e10] [cursor=pointer]:
+          - /url: category.html#nodejs
+        - link "Golang" [ref=e11] [cursor=pointer]:
+          - /url: category.html#golang
+        - link "关于" [ref=e12] [cursor=pointer]:
+          - /url: about.html
+  - main [ref=e13]:
+    - generic [ref=e15]:
+      - paragraph [ref=e16]: 分类
+      - heading "文章分类" [level=1] [ref=e17]
+      - paragraph [ref=e18]: 按技术栈归档：Flutter、React、NodeJs 与 Golang。每个分类下按发布时间由新到旧排列。
+    - generic [ref=e20]:
+      - navigation "文章分类" [ref=e21]:
+        - link "Flutter（3）" [ref=e22] [cursor=pointer]:
+          - /url: "#flutter"
+        - link "React（3）" [ref=e23] [cursor=pointer]:
+          - /url: "#react"
+        - link "NodeJs（3）" [ref=e24] [cursor=pointer]:
+          - /url: "#nodejs"
+        - link "Golang（3）" [ref=e25] [cursor=pointer]:
+          - /url: "#golang"
+      - region "Flutter" [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Flutter" [level=2] [ref=e28]
+          - generic [ref=e29]: 3 篇文章
+        - paragraph [ref=e30]: Dart 与 Flutter 工程的渲染、状态与性能实践。
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - heading "Flutter 渲染管线：从 Widget 到 Layer 的完整链路" [level=3] [ref=e33]:
+              - link "Flutter 渲染管线：从 Widget 到 Layer 的完整链路" [ref=e34] [cursor=pointer]:
+                - /url: article.html
+            - paragraph [ref=e35]:
+              - generic [ref=e36]: Flutter
+              - generic [ref=e37]: ·
+              - time [ref=e38]: 2026-08-12
+              - generic [ref=e39]: ·
+              - generic [ref=e40]: 9 分钟阅读
+            - paragraph [ref=e41]: 把 Build、Layout、Paint、Composite 四个阶段拆开看，理解为什么一次 setState 的代价常常不在你以为的地方。
+          - listitem [ref=e42]:
+            - heading "用 Riverpod 重构状态层：一次真实项目的取舍" [level=3] [ref=e43]:
+              - link "用 Riverpod 重构状态层：一次真实项目的取舍" [ref=e44] [cursor=pointer]:
+                - /url: article.html
+            - paragraph [ref=e45]:
+              - generic [ref=e46]: Flutter
+              - generic [ref=e47]: ·
+              - time [ref=e48]: 2026-09-03
+              - generic [ref=e49]: ·
+              - generic [ref=e50]: 12 分钟阅读
+            - paragraph [ref=e51]: 从 Provider 迁移到 Riverpod 的完整过程、中途踩到的坑，以及什么时候你不该引入全局状态容器。
+          - listitem [ref=e52]:
+            - heading "Flutter 性能调优：帧率、内存与启动耗时" [level=3] [ref=e53]:
+              - link "Flutter 性能调优：帧率、内存与启动耗时" [ref=e54] [cursor=pointer]:
+                - /url: article.html
+            - paragraph [ref=e55]:
+              - generic [ref=e56]: Flutter
+              - generic [ref=e57]: ·
+              - time [ref=e58]: 2026-10-01
+              - generic [ref=e59]: ·
+              - generic [ref=e60]: 10 分钟阅读
+            - paragraph [ref=e61]: 用 DevTools 定位掉帧与内存增长，给出一套可复用的排查顺序和几个常见的误判。
+  - contentinfo [ref=e62]:
+    - generic [ref=e63]:
+      - paragraph [ref=e64]: © 2026 abert 博客 · 界面演示稿，文章与联系方式均为示例内容
+      - paragraph [ref=e65]: Flutter · React · NodeJs · Golang

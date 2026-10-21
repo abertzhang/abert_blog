@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "state": "compiled-route-contract",
+  "cache_key": "-:-:-:-:-:-:-",
+  "source_route": {
+    "path": ".design-suite/route.json",
+    "sha256": "0466f270e62d094d503aab826f370d52b508f9999e225fa39891da6b5c6b6c7f",
+    "state": "route-ready"
+  },
+  "profile": {
+    "id": null,
+    "label": null,
+    "status": null,
+    "path": null,
+    "runtime_manifest": {
+      "path": null,
+      "sha256": null
+    },
+    "prompt": {
+      "variant_id": null,
+      "path": null,
+      "sha256": null
+    },
+    "visual_contract": {
+      "intent": null,
+      "visual_language": null,
+      "rules": [],
+      "page_context_adapter": null,
+      "identity_boundary": null
+    },
+    "selected_variant": null,
+    "quantitative": {
+      "id": null,
+      "label": null,
+      "selection": null,
+      "path": null,
+      "tokens": null,
+      "basis": null,
+      "selection_guidance": null
+    }
+  },
+  "page": {
+    "deliverable": "website",
+    "page_context": "website",
+    "design_target": "web",
+    "page_task": "editorial-content",
+    "audience": "mixed",
+    "primary_action": "阅读文章",
+    "trust_strategy": "editorial-authority",
+    "media_strategy": "type-led",
+    "motion_level": "restrained",
+    "content_density": "medium"
+  },
+  "domain": {
+    "id": null,
+    "requirements": []
+  },
+  "composition": {
+    "route": null,
+    "outline": [],
+    "loaded": false
+  },
+  "media": {
+    "mode": "disabled",
+    "provider": null,
+    "state": "disabled",
+    "trigger": "never",
+    "provenance": null,
+    "supplied_assets": [],
+    "runtime_status": "not-requested"
+  },
+  "references": {
+    "catalog": null,
+    "trace": null
+  },
+  "downstream_capabilities": [],
+  "validation_plan": [
+    "visual",
+    "responsive",
+    "interaction",
+    "accessibility"
+  ],
+  "load_plan": {
+    "loaded": [
+      ".design-suite/route.json"
+    ],
+    "parallelizable": [
+      "visual-contract",
+      "domain-requirements",
+      "page-composition"
+    ],
+    "deferred": [
+      "DESIGN.md",
+      "evidence.json",
+      "references/research/*.json"
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+跳到正文
+abert 博客
+首页
+Flutter
+React
+NodeJs
+Golang
+关于
+首页
+·
+Flutter
+
+Flutter
+
+Flutter 渲染管线：从 Widget 到 Layer 的完整链路
+
+作者 abert
+·
+2026-08-12
+·
+Flutter
+·
+约 9 分钟阅读
+
+很多人对 Flutter 的性能印象来自一句话：Widget 很轻，重建不贵。这句话是对的，但它只覆盖了整条链路的第一段。真正决定一次更新要花多少时间的，往往是你没有显式写过的那几层。
+
+一次更新经历了什么
+
+从调用 setState 到屏幕上出现新像素，中间至少经过四个阶段：构建（Build）、布局（Layout）、绘制（Paint）与合成（Composite）。每个阶段都有自己的失效范围，理解这个范围，才能判断代价落在哪里。
+
+dart
+class ArticleListView extends ConsumerWidget {
+  const ArticleListView({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final articles = ref.watch(articleListProvider);
+    return articles.when(
+      data: (items) => ListView.builder(
+        itemCount: items.length,
+        itemBuilder: (context, index) => ArticleTile(article: items[index]),
+      ),
+      loading: () => const Center(child: CircularProgressIndicator()),
+      error: (error, stack) => ErrorView(error: error),
+    );
+  }
+}
+
+上面这段代码本身没有问题，但 ref.watch 的位置决定了整棵子树的失效范围：把订阅放在列表项之外，任何一条数据变化都会重建整个列表容器。
+
+为什么代价常常不在 setState
+
+构建阶段的成本通常是可控的，因为 Widget 只是不可变的配置对象。真正昂贵的是布局与绘制：它们要处理真实的几何信息与像素。
+
+布局阶段的真实开销
+
+当一棵子树的约束发生变化，布局会沿着这棵子树自顶向下重新计算。常见的放大器有三个：
+
+在滚动容器里使用无界高度的布局组件，导致每帧重新测量；
+把频繁变化的状态订阅放在靠近根节点的位置，放大失效范围；
+在同一帧里连续触发多次状态更新，却没有合并成一次。
+
+判断性能问题的最快方式，不是读代码找可疑点，而是先让 DevTools 告诉你时间花在哪个阶段，再回到代码里找对应的那行。
+
+把结论变成可执行的检查
+
+把上面的分析整理成一套可以在每次提交前跑一遍的动作：
+
+shell
+flutter run --profile --trace-startup
+flutter build apk --split-debug-info=build/symbols
+
+如果时间线里布局与绘制占比明显高于构建，说明问题在几何而非状态；反之则应优先检查订阅粒度与状态合并。两种情况的优化方向完全不同，先分清楚再动手，能省掉大量无效重构。
+
+Flutter
+渲染
+性能
+上一篇
+用 Riverpod 重构状态层：一次真实项目的取舍
+下一篇
+Flutter 性能调优：帧率、内存与启动耗时
+
+© 2026 abert 博客 · 界面演示稿，文章与联系方式均为示例内容
+
+Flutter · React · NodeJs · Golang

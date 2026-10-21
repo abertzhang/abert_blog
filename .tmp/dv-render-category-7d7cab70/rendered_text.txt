@@ -1,0 +1,57 @@
+跳到正文
+abert 博客
+首页
+Flutter
+React
+NodeJs
+Golang
+关于
+
+分类
+
+文章分类
+
+按技术栈归档：Flutter、React、NodeJs 与 Golang。每个分类下按发布时间由新到旧排列。
+
+Flutter（3）
+React（3）
+NodeJs（3）
+Golang（3）
+Flutter
+3 篇文章
+
+Dart 与 Flutter 工程的渲染、状态与性能实践。
+
+Flutter 渲染管线：从 Widget 到 Layer 的完整链路
+
+Flutter
+·
+2026-08-12
+·
+9 分钟阅读
+
+把 Build、Layout、Paint、Composite 四个阶段拆开看，理解为什么一次 setState 的代价常常不在你以为的地方。
+
+用 Riverpod 重构状态层：一次真实项目的取舍
+
+Flutter
+·
+2026-09-03
+·
+12 分钟阅读
+
+从 Provider 迁移到 Riverpod 的完整过程、中途踩到的坑，以及什么时候你不该引入全局状态容器。
+
+Flutter 性能调优：帧率、内存与启动耗时
+
+Flutter
+·
+2026-10-01
+·
+10 分钟阅读
+
+用 DevTools 定位掉帧与内存增长，给出一套可复用的排查顺序和几个常见的误判。
+
+© 2026 abert 博客 · 界面演示稿，文章与联系方式均为示例内容
+
+Flutter · React · NodeJs · Golang
