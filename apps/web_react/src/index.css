@@ -1,111 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  --color-primary: #0d9488;
+  --color-primary-light: #ccfbf1;
+  --color-ink-900: #0f172a;
+  --color-ink-600: #475569;
+  --color-canvas: #f1f5f9;
 }
 
 body {
   margin: 0;
+  font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
+@layer components {
+  .container-page {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .card {
+    @apply rounded-xl border border-ink-200/70 bg-white shadow-card;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium transition disabled:pointer-events-none disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-primary text-white shadow-sm hover:bg-primary-dark;
+  }
+  .btn-ghost {
+    @apply btn border border-ink-200/80 bg-white text-ink-800 hover:border-primary hover:text-primary;
+  }
+  .btn-dark {
+    @apply btn bg-ink-900 text-white hover:bg-ink-800;
+  }
+  .tag {
+    @apply inline-flex cursor-pointer items-center gap-1 rounded-md border border-ink-200/80 bg-white px-3 py-1 text-xs font-medium text-ink-600 transition hover:border-primary hover:text-primary;
+  }
+  .badge {
+    @apply inline-flex items-center rounded px-2 py-0.5 text-xs font-medium;
+  }
+  .badge-published {
+    @apply badge bg-primary-light text-primary-dark;
+  }
+  .badge-draft {
+    @apply badge bg-slate-100 text-ink-600;
+  }
+  .badge-pinned {
+    @apply badge bg-amber-50 text-amber-700;
+  }
+  .section-title {
+    @apply flex items-center gap-2 text-lg font-semibold text-ink-900;
+  }
+  .section-title::before {
+    content: '';
+    @apply h-5 w-1 rounded-sm bg-primary;
+  }
+  .link-primary {
+    @apply text-primary hover:underline;
   }
 }
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
+
+/* Markdown prose（基于设计稿排版） */
+.markdown-body {
+  @apply leading-relaxed text-ink-800;
+}
+.markdown-body h1 {
+  @apply mb-3 mt-6 text-2xl font-bold text-ink-900;
+}
+.markdown-body h2 {
+  @apply mb-3 mt-6 border-l-4 border-primary pl-3 text-xl font-bold text-ink-900;
+}
+.markdown-body h3 {
+  @apply mb-2 mt-5 text-lg font-semibold text-ink-900;
+}
+.markdown-body p {
+  @apply my-3 leading-7 text-ink-600;
+}
+.markdown-body pre {
+  @apply my-4 overflow-auto rounded-lg bg-ink-900 p-4 font-mono text-sm text-slate-200;
+}
+.markdown-body code {
+  @apply rounded bg-slate-100 px-1.5 py-0.5 font-mono text-sm text-primary-dark;
+}
+.markdown-body pre code {
+  @apply bg-transparent p-0 text-slate-200;
+}
+.markdown-body blockquote {
+  @apply my-4 border-l-4 border-primary bg-primary-light/40 py-2 pl-4 italic text-ink-600;
+}
+.markdown-body a {
+  @apply text-primary hover:underline;
+}
+.markdown-body ul {
+  @apply my-3 list-disc pl-6 text-ink-600;
+}
+.markdown-body ol {
+  @apply my-3 list-decimal pl-6 text-ink-600;
+}
+.markdown-body img {
+  @apply my-3 max-w-full rounded-lg;
+}
+.markdown-body table {
+  @apply my-4 w-full border-collapse text-sm;
+}
+.markdown-body th,
+.markdown-body td {
+  @apply border border-ink-200/70 px-3 py-2;
+}
+.markdown-body th {
+  @apply bg-slate-50 font-semibold;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-ink-200;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-ink-400;
+}
+
+/* ===== 标签云漂浮动画 ===== */
+@keyframes wc-float {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0) rotate(var(--r0)) scale(var(--s0));
+    opacity: var(--ob);
+    filter: blur(0);
+    z-index: var(--z0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(var(--dx), var(--dy)) rotate(var(--r1)) scale(var(--s1));
+    opacity: var(--ob);
+    filter: blur(var(--b1));
+    z-index: var(--z1);
   }
 }
-p {
-  margin: 0;
+
+.wc-item:hover {
+  animation-play-state: paused !important;
+  opacity: 1 !important;
+  filter: none !important;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+@media (prefers-reduced-motion: reduce) {
+  .wc-item {
+    animation: none !important;
+  }
 }

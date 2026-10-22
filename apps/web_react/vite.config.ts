@@ -9,6 +9,14 @@ export default defineConfig({
     port: 5001,
     // 端口被占用时直接报错，而不是自动顺延到 5002/5003 —— monorepo 里端口必须可预期
     strictPort: true,
+    // 开发期将 /blog 代理到博客后端（默认 :8080，PostgreSQL 作为存储）。
+    // 后端上线前用 mock 数据也能预览，见 src/api/blog.ts 的 USE_MOCK 开关。
+    proxy: {
+      '/blog': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+      },
+    },
   },
   preview: {
     port: 5001,
