@@ -182,7 +182,7 @@ apps/api_express/
 ├── middleware/
 │   └── auth.js             # requireAuth / requireAdmin
 ├── routes/
-│   ├── articles.js         # 第 5 章
+│   ├── articleRouter.js         # 第 5 章
 │   ├── categories.js       # 第 6 章
 │   ├── comments.js         # 第 8 章
 │   ├── auth.js             # 第 10 章
@@ -597,7 +597,7 @@ export function LatestPosts() {
 **后端示例（Express）**：
 
 ```js
-// routes/articles.js
+// routes/articleRouter.js
 const express = require('express');
 const db = require('../db');
 const { ok, fail, asyncHandler } = require('../helpers');

@@ -14,13 +14,12 @@ import type { Article, Category, TagCount } from '../types/blog'
 // 每个分类给一张渐变 slide，点击跳转到对应分类列表页。
 const SLIDE_GRADIENTS: Record<string, string> = {
   Flutter: 'linear-gradient(135deg,#0D9488,#0F766E)',
-  鸿蒙: 'linear-gradient(135deg,#0284C7,#075985)',
+  NodeJs: 'linear-gradient(135deg,#16A34A,#15803D)',
   Golang: 'linear-gradient(135deg,#4F46E5,#3730A3)',
   React: 'linear-gradient(135deg,#2563EB,#1D4ED8)',
-  Rust: 'linear-gradient(135deg,#0891B2,#0E7490)',
   其他: 'linear-gradient(135deg,#475569,#1E293B)',
 }
-const CATEGORY_ORDER = ['Flutter', '鸿蒙', 'Golang', 'React', 'Rust', '其他']
+const CATEGORY_ORDER = ['Flutter', 'React', 'NodeJs', 'Golang', '其他']
 const MAX_SLIDES = 5
 
 function buildSlides(cats: Category[]): Slide[] {
@@ -201,7 +200,7 @@ function AuthorCard() {
       <div className="mt-3 text-base font-semibold text-ink-900">行云流水（Abert）</div>
       <div className="mt-1 text-xs text-ink-400">全栈开发工程师 / 付费开发者</div>
       <p className="mt-3 text-sm leading-6 text-ink-600">
-        热爱探究底层技术，目前深耕 Rust 系统编程、Flutter 跨端和鸿蒙 Next 应用生态架构。
+        热爱探究底层技术，目前深耕 Flutter 跨端、React 前端与 NodeJs 服务端，并用 Golang 打磨后端高并发基建。
       </p>
       <div className="mt-4 flex items-center justify-center gap-3 text-ink-400">
         {['GitHub', 'X', '✉', '📡'].map((s) => (

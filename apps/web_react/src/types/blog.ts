@@ -7,7 +7,7 @@
 export interface Category {
   id: number
   name: string
-  /** 英文 slug，用于 URL（如 harmony / flutter / other），由后端 categories.slug 字段下发 */
+  /** 英文 slug，用于 URL（如 flutter / react / nodejs / golang / other），由后端 categories.slug 字段下发 */
   slug?: string
   /** 排序权重，升序展示，「其他」兜底分类固定排最后 */
   sort?: number

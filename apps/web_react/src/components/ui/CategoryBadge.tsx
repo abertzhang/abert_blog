@@ -6,7 +6,7 @@ interface Props {
   className?: string
 }
 
-// 设计稿 # Flutter / # 鸿蒙 样式的小标签
+// 设计稿 # Flutter / # NodeJs 样式的小标签
 export default function CategoryBadge({ name, withDot = true, className = '' }: Props) {
   if (!name) return null
   const s = categoryStyle(name)

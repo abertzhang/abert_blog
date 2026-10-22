@@ -22,10 +22,9 @@ export default {
         },
         cat: {
           flutter: '#0D9488',
-          harmony: '#0284C7',
+          nodejs: '#16A34A',
           golang: '#4F46E5',
           react: '#2563EB',
-          rust: '#0891B2',
           // 「其他」分类：中性灰，不与各技术栈主色抢视觉
           other: '#64748B',
         },

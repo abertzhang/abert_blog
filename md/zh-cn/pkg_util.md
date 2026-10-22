@@ -172,7 +172,7 @@ nodejs
     "dev": "nodemon --watch app.js --watch routes --watch bin --ext js,json ./bin/www",
     "start": "node ./bin/www",
     "build": "echo \"api_express: 无构建步骤，pnpm start 直接运行\"",
-    "lint": "node --check app.js && node --check routes/index.js && node --check routes/users.js && node --check bin/www"
+    "lint": "node --check app.js && node --check routes/index.js && node --check routes/userRouter.js && node --check bin/www"
   },
 ```
 

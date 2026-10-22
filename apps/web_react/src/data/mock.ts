@@ -10,13 +10,14 @@ import type {
   TagCount,
 } from '../types/blog'
 
+// 文章类型分类固定为：Flutter / React / NodeJs / Golang / 其他(Other)
+// 前四种为技术栈核心分类；不属于这四类的文章统一归入「其他」兜底分类。
 export const mockCategories: Category[] = [
   { id: 1, name: 'Flutter', slug: 'flutter', sort: 1, article_count: 3 },
-  { id: 2, name: '鸿蒙', slug: 'harmony', sort: 2, article_count: 2 },
-  { id: 3, name: 'Golang', slug: 'golang', sort: 3, article_count: 1 },
-  { id: 4, name: 'React', slug: 'react', sort: 4, article_count: 3 },
-  { id: 5, name: 'Rust', slug: 'rust', sort: 5, article_count: 1 },
-  { id: 6, name: '其他', slug: 'other', sort: 99, article_count: 2 },
+  { id: 4, name: 'React', slug: 'react', sort: 2, article_count: 3 },
+  { id: 2, name: 'NodeJs', slug: 'nodejs', sort: 3, article_count: 0 },
+  { id: 3, name: 'Golang', slug: 'golang', sort: 4, article_count: 1 },
+  { id: 6, name: '其他', slug: 'other', sort: 99, article_count: 5 },
 ]
 
 const md = (body: string) => `## 背景\n\n${body}\n\n## 核心思路\n\n1. 先理清问题边界。\n2. 再选择实现方案。\n3. 最后落地并验证。\n\n## 小结\n\n实践是检验真理的唯一标准。`
@@ -67,8 +68,8 @@ export const mockArticles: Article[] = [
     title: '鸿蒙 Next 应用工程化实践',
     summary: 'ArkTS、模块化、构建流水线，分享一套可复用的鸿蒙工程化脚手架。',
     content: md('鸿蒙 Next 走向声明式 UI，工程化需要重新设计。'),
-    category_id: 2,
-    category_name: '鸿蒙',
+    category_id: 6,
+    category_name: '其他',
     tags: '鸿蒙,ArkTS,工程化',
     author_name: '行云流水',
     view_count: 1670,
@@ -80,8 +81,8 @@ export const mockArticles: Article[] = [
     title: '在鸿蒙上实现跨设备协同的几种姿势',
     summary: '分布式软总线、Ability 迁移、万能卡片的适用场景对比。',
     content: md('跨设备是鸿蒙的差异化能力，本文对比三种协同形态。'),
-    category_id: 2,
-    category_name: '鸿蒙',
+    category_id: 6,
+    category_name: '其他',
     tags: '鸿蒙,分布式',
     author_name: '行云流水',
     view_count: 810,
@@ -145,8 +146,8 @@ export const mockArticles: Article[] = [
     title: 'Rust 所有权：为什么它让并发更安全',
     summary: '从编译期借用检查聊到无畏并发（fearless concurrency）。',
     content: md('所有权是 Rust 的灵魂，也是并发安全的根基。'),
-    category_id: 5,
-    category_name: 'Rust',
+    category_id: 6,
+    category_name: '其他',
     tags: 'Rust,系统编程',
     author_name: '行云流水',
     view_count: 1330,
@@ -182,12 +183,10 @@ export const mockArticles: Article[] = [
 ]
 
 export const mockTags: TagCount[] = [
-  { word: 'Flutter', count: 5 },
-  { word: 'React', count: 4 },
-  { word: '鸿蒙', count: 3 },
+  { word: 'Flutter', count: 3 },
+  { word: 'React', count: 3 },
   { word: 'Vite', count: 2 },
-  { word: 'Rust', count: 2 },
-  { word: 'Golang', count: 2 },
+  { word: 'Golang', count: 1 },
   { word: 'Tailwind', count: 2 },
   { word: '性能优化', count: 1 },
   { word: '并发', count: 1 },

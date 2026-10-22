@@ -1,7 +1,7 @@
 export default function Dashboard() {
   const stats = [
     { label: '文章总数', value: 12 },
-    { label: '分类数', value: 6 },
+    { label: '分类数', value: 5 },
     { label: '评论数', value: 2 },
     { label: '友链数', value: 6 },
   ]

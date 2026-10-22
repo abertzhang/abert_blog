@@ -1,0 +1,19 @@
+{
+  "request_text": "根据web端,设计一套手机端个人博客的手机页面的全套图",
+  "site_type": "personal-blog",
+  "output_path": "doc/mobile-ui",
+  "target_platforms": ["mobile-web"],
+  "design_basis": "doc/ui（Web 端已交付设计，作为 1:1 设计基准）",
+  "reference_pages": [
+    "doc/ui/index.html",
+    "doc/ui/category.html",
+    "doc/ui/article.html",
+    "doc/ui/about.html"
+  ],
+  "article_categories": ["Flutter", "React", "NodeJs", "Golang"],
+  "pages": ["home", "category", "article-detail", "about"],
+  "visual_direction": "沿用 Web 端：极简白底 + 深色文字 + 强调色 #14427f",
+  "backend_integration": false,
+  "delivery_form": "one-self-contained-html-per-page",
+  "language": "zh-CN"
+}

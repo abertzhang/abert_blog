@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS users (
 CREATE TABLE IF NOT EXISTS categories (
   id            BIGSERIAL PRIMARY KEY,
   name          VARCHAR(64) NOT NULL,
-  slug          VARCHAR(64) NOT NULL DEFAULT '',  -- 英文 URL 标识（harmony/flutter/other）
+  slug          VARCHAR(64) NOT NULL DEFAULT '',  -- 英文 URL 标识（flutter/react/nodejs/golang/other）
   sort          INT NOT NULL DEFAULT 0,
   article_count INT NOT NULL DEFAULT 0,           -- 冗余计数，便于列表直读
   created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
@@ -87,11 +87,12 @@ CREATE TABLE IF NOT EXISTS friend_links (
 );
 
 -- 初始分类（与前端 mock / 导航顺序一致；slug 用于 URL）
+-- 文章类型固定为 Flutter / React / NodeJs / Golang / 其他(Other)，
+-- 不属于前四类的文章统一归入「其他」兜底分类。
 INSERT INTO categories (name, slug, sort) VALUES
   ('Flutter', 'flutter', 1),
-  ('鸿蒙',    'harmony', 2),
-  ('Golang',  'golang',  3),
-  ('React',   'react',   4),
-  ('Rust',    'rust',    5),
+  ('React',   'react',   2),
+  ('NodeJs',  'nodejs',  3),
+  ('Golang',  'golang',  4),
   ('其他',    'other',   99)
 ON CONFLICT DO NOTHING;

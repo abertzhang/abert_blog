@@ -1,0 +1,28 @@
+# PostgreSQL for apps/api_express (blog)
+# 启动：docker compose up -d
+# 停止：docker compose down        （保留数据卷 pgdata）
+# 清空重建：docker compose down -v  （会删掉库内所有数据，init 脚本会重新执行）
+# npm run db:psql             # 进入 psql 命令行
+services:
+  postgres:
+    image: postgres:16                 # 使用本机已缓存镜像（postgres:16）
+    container_name: blog_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: blog            # 数据库名（与需求一致）
+      POSTGRES_USER: blog          # 应用连接账号
+      POSTGRES_PASSWORD: blog123456
+    ports:
+      - "5433:5432"                # 宿主机 5433 -> 容器 5432（5432 已被 all_in_node-postgres-1 占用，保持隔离）
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # 首次启动（数据卷为空）时，按字母序自动执行挂载的 SQL
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U blog -d blog"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:

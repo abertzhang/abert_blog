@@ -1,0 +1,29 @@
+[html:l6] 关于 — abert 博客
+[html:l12] 跳到正文
+[html:l15] abert 博客
+[html:l16] 首页 分类 关于
+[html:l22] 关于
+[html:l23] 关于本站
+[html:l24] 一个只写长文的技术博客：把一个问题的来龙去脉写清楚，而不是只给出可以复制的答案。
+[html:l27] 个人简介
+[html:l28] 我是 abert，客户端与服务端都写。日常工作集中在跨端应用的性能与架构，以及支撑它的服务端工程与可观测性建设。
+[html:l29] 这个博客用来存放那些在项目里被反复问起、但很少被完整写下来的问题：为什么这样设计、边界在哪里、当时的取舍是什么。文章尽量给出可验证的判断依据，而不是模糊的经验之谈。
+[html:l32] 技能与技术栈
+[html:l34] Flutter Dart、Riverpod / Bloc、自定义绘制与渲染管线、DevTools 性能分析
+[html:l35] React Hooks 与并发特性、状态同步、组件库设计与大型应用结构
+[html:l36] NodeJs HTTP 服务与网关、异步 IO 与事件循环、内存与性能排查
+[html:l37] Golang 并发模型与 context、泛型、服务可观测性与 pprof 分析
+[html:l38] 工程与工具 TypeScript、CI 流水线、可观测性建设、性能与稳定性治理
+[html:l42] 联系方式
+[html:l44] 邮箱 hello@example.com
+[html:l45] GitHub github.com/yourname
+[html:l46] 本站内容 长文笔记与技术复盘，不转载、不投放广告
+[html:l48] 以上为演示占位信息，正式发布前需替换为真实联系方式。
+[html:l51] 站点说明
+[html:l53] 内容范围：Flutter、React、NodeJs 与 Golang 四类技术文章。
+[html:l54] 更新节奏：以完整长文为主，不追求高频更新。
+[html:l55] 阅读体验：正文单栏排版，代码块可横向滚动，不加载任何外部资源。
+[html:l56] 本站为纯静态界面稿，不包含后台、评论与订阅功能。
+[html:l63] © 2026 abert 博客 · 界面演示稿，文章与联系方式均为示例内容
+[html:l64] Flutter · React · NodeJs · Golang
+[html:l67] 首页 分类 关于

@@ -1,13 +1,12 @@
 // 分类名 ↔ URL slug 映射工具
 //
-// URL 里不出现中文，统一使用英文 slug：鸿蒙 → /category/harmony、其他 → /category/other
+// URL 里不出现中文，统一使用英文 slug：其他 → /category/other、NodeJs → /category/nodejs
 // slug 真值来自后端 categories.slug 字段；本文件的映射表与 ASCII 化规则仅作兜底。
 import type { Category } from '../types/blog'
 
 const SLUG_MAP: Record<string, string> = {
-  鸿蒙: 'harmony',
-  harmony: 'harmony',
-  harmonyos: 'harmony',
+  NodeJs: 'nodejs',
+  nodejs: 'nodejs',
   其他: 'other',
   其他分类: 'other',
   测试: 'test',

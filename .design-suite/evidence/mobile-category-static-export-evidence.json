@@ -1,0 +1,184 @@
+{
+  "evidence_type": "static-export-browser-evidence/v1",
+  "generator": "verify_static_export.mjs",
+  "kind": "website",
+  "delivery_adapter": "static-export",
+  "export_mode": "single-file",
+  "visual_provider": null,
+  "artifact_path": "../../doc/mobile-ui/category.html",
+  "artifact_path_base": "evidence-directory",
+  "captured_at": "2026-10-22T02:12:00.321Z",
+  "browser": "Google Chrome 155.0.8059.85",
+  "contract_sha256": "bbd828158ef98100d526b173360b11771ac66891b3bf36a90908aaa0b4e01d62",
+  "artifact_sha256": "d3821089e51365bcd7b4c0a2aef3cd98e2fd202b19ee0dcb0b3d565c862ba974",
+  "media_manifest_sha256": null,
+  "checks": {
+    "structure": "passed",
+    "offline": "passed",
+    "render": "passed",
+    "console": "passed",
+    "responsive": "passed"
+  },
+  "sandbox_runtime": {
+    "authored_violations": [],
+    "bundled_warnings": [],
+    "runtime_shim_usage": []
+  },
+  "viewports": [
+    {
+      "width": 320,
+      "height": 568,
+      "process_status": 0,
+      "state": "ready",
+      "provider": "none",
+      "main": "visible",
+      "error_count": 0,
+      "error_messages": [],
+      "sandbox_api_usage": [],
+      "overflow": "false",
+      "app_preview": null,
+      "media": null,
+      "stderr": [
+        "DevTools listening on ws://127.0.0.1:53753/devtools/browser/e34a0efd-bcfe-4a13-88fd-81c437b278d9",
+        "Trying to load the allocator multiple times. This is *not* supported.",
+        "[55333:681595:1022/101158.643088:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646232:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646380:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646520:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646623:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646701:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "process_status": 0,
+      "state": "ready",
+      "provider": "none",
+      "main": "visible",
+      "error_count": 0,
+      "error_messages": [],
+      "sandbox_api_usage": [],
+      "overflow": "false",
+      "app_preview": null,
+      "media": null,
+      "stderr": [
+        "DevTools listening on ws://127.0.0.1:53753/devtools/browser/e34a0efd-bcfe-4a13-88fd-81c437b278d9",
+        "Trying to load the allocator multiple times. This is *not* supported.",
+        "[55333:681595:1022/101158.643088:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646232:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646380:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646520:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646623:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646701:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670"
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "process_status": 0,
+      "state": "ready",
+      "provider": "none",
+      "main": "visible",
+      "error_count": 0,
+      "error_messages": [],
+      "sandbox_api_usage": [],
+      "overflow": "false",
+      "app_preview": null,
+      "media": null,
+      "stderr": [
+        "DevTools listening on ws://127.0.0.1:53753/devtools/browser/e34a0efd-bcfe-4a13-88fd-81c437b278d9",
+        "Trying to load the allocator multiple times. This is *not* supported.",
+        "[55333:681595:1022/101158.643088:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646232:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646380:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646520:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646623:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646701:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "process_status": 0,
+      "state": "ready",
+      "provider": "none",
+      "main": "visible",
+      "error_count": 0,
+      "error_messages": [],
+      "sandbox_api_usage": [],
+      "overflow": "false",
+      "app_preview": null,
+      "media": null,
+      "stderr": [
+        "DevTools listening on ws://127.0.0.1:53753/devtools/browser/e34a0efd-bcfe-4a13-88fd-81c437b278d9",
+        "Trying to load the allocator multiple times. This is *not* supported.",
+        "[55333:681595:1022/101158.643088:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646232:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646380:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646520:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646623:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646701:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670"
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "process_status": 0,
+      "state": "ready",
+      "provider": "none",
+      "main": "visible",
+      "error_count": 0,
+      "error_messages": [],
+      "sandbox_api_usage": [],
+      "overflow": "false",
+      "app_preview": null,
+      "media": null,
+      "stderr": [
+        "DevTools listening on ws://127.0.0.1:53753/devtools/browser/e34a0efd-bcfe-4a13-88fd-81c437b278d9",
+        "Trying to load the allocator multiple times. This is *not* supported.",
+        "[55333:681595:1022/101158.643088:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646232:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646380:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646520:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646623:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646701:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670"
+      ]
+    },
+    {
+      "width": 2560,
+      "height": 1080,
+      "process_status": 0,
+      "state": "ready",
+      "provider": "none",
+      "main": "visible",
+      "error_count": 0,
+      "error_messages": [],
+      "sandbox_api_usage": [],
+      "overflow": "false",
+      "app_preview": null,
+      "media": null,
+      "stderr": [
+        "DevTools listening on ws://127.0.0.1:53753/devtools/browser/e34a0efd-bcfe-4a13-88fd-81c437b278d9",
+        "Trying to load the allocator multiple times. This is *not* supported.",
+        "[55333:681595:1022/101158.643088:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646232:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646380:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646520:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646623:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670",
+        "[55333:681595:1022/101158.646701:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670"
+      ]
+    }
+  ],
+  "structure": {
+    "ok": true,
+    "errors": [],
+    "references": [],
+    "local_references": [],
+    "external_references": [],
+    "sandbox_runtime": {
+      "authored_violations": [],
+      "bundled_warnings": []
+    }
+  }
+}

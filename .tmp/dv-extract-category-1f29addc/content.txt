@@ -1,0 +1,62 @@
+[html:l6] 文章分类 — abert 博客
+[html:l12] 跳到正文
+[html:l15] abert 博客
+[html:l16] 首页 分类 关于
+[html:l22] 分类
+[html:l23] 文章分类
+[html:l24] 按技术栈归档：Flutter、React、NodeJs 与 Golang。每个分类下按发布时间由新到旧排列。
+[html:l30] Flutter（3）
+[html:l31] React（3）
+[html:l32] NodeJs（3）
+[html:l33] Golang（3）
+[html:l37] Flutter
+[html:l38] 3 篇文章
+[html:l40] Dart 与 Flutter 工程的渲染、状态与性能实践。
+[html:l43] Flutter 渲染管线：从 Widget 到 Layer 的完整链路
+[html:l44] Flutter · 2026-08-12 · 9 分钟阅读
+[html:l45] 把 Build、Layout、Paint、Composite 四个阶段拆开看，理解为什么一次 setState 的代价常常不在你以为的地方。
+[html:l48] 用 Riverpod 重构状态层：一次真实项目的取舍
+[html:l49] Flutter · 2026-09-03 · 12 分钟阅读
+[html:l50] 从 Provider 迁移到 Riverpod 的完整过程、中途踩到的坑，以及什么时候你不该引入全局状态容器。
+[html:l53] Flutter 性能调优：帧率、内存与启动耗时
+[html:l54] Flutter · 2026-10-01 · 10 分钟阅读
+[html:l55] 用 DevTools 定位掉帧与内存增长，给出一套可复用的排查顺序和几个常见的误判。
+[html:l61] React
+[html:l62] 3 篇文章
+[html:l64] React 运行时、状态同步与大型应用的工程组织。
+[html:l67] React 19 的并发渲染到底解决了什么问题
+[html:l68] React · 2026-08-20 · 8 分钟阅读
+[html:l69] 从时间切片到可中断渲染，说明并发特性在真实交互里带来的变化，以及它管不到的部分。
+[html:l72] 从 useEffect 到 useSyncExternalStore：状态同步的演进
+[html:l73] React · 2026-09-11 · 11 分钟阅读
+[html:l74] React 为什么额外提供 useSyncExternalStore，它在订阅外部数据源时解决了什么一致性问题。
+[html:l77] 大型 React 应用的目录与状态边界
+[html:l78] React · 2026-10-06 · 9 分钟阅读
+[html:l79] 组件数量过百之后，目录结构与状态归属比抽象层次更能决定项目还能不能维护。
+[html:l85] NodeJs
+[html:l86] 3 篇文章
+[html:l88] Node.js 运行时行为、服务端工程与线上问题排查。
+[html:l91] Node.js 事件循环与异步 IO 的真实行为
+[html:l92] NodeJs · 2026-08-25 · 10 分钟阅读
+[html:l93] 宏任务、微任务与阶段划分，以及为什么回调的实际执行顺序总和你预期的不同。
+[html:l96] 用 Fastify 构建可观测的 API 服务
+[html:l97] NodeJs · 2026-09-15 · 12 分钟阅读
+[html:l98] 从日志、指标到链路追踪，把可观测性当作接口设计的一部分，而不是上线后补的补丁。
+[html:l101] Node.js 内存泄漏排查实战
+[html:l102] NodeJs · 2026-10-10 · 11 分钟阅读
+[html:l103] 从堆快照对比到对象增长追踪，还原一次线上内存持续上涨的完整定位过程。
+[html:l109] Golang
+[html:l110] 3 篇文章
+[html:l112] Go 语言特性、并发模型与服务端工程实践。
+[html:l115] Go 泛型实践：约束、类型推导与常见陷阱
+[html:l116] Golang · 2026-08-28 · 9 分钟阅读
+[html:l117] 从约束定义到类型集合，梳理泛型在业务代码里真正值得引入的位置。
+[html:l120] Go 并发模型：从 goroutine 到结构化并发
+[html:l121] Golang · 2026-09-18 · 13 分钟阅读
+[html:l122] context、errgroup 与生命周期管理，让并发任务的退出路径重新变得可读。
+[html:l125] Go 服务可观测性：pprof 与 trace 上手
+[html:l126] Golang · 2026-10-14 · 10 分钟阅读
+[html:l127] 用标准库工具定位 CPU 热点、阻塞与内存分配，附一套可以直接复制的接入方式。
+[html:l136] © 2026 abert 博客 · 界面演示稿，文章与联系方式均为示例内容
+[html:l137] Flutter · React · NodeJs · Golang
+[html:l140] 首页 分类 关于

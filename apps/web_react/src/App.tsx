@@ -16,7 +16,7 @@ export default function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/articles" element={<ArticleList />} />
-            {/* 分类列表页：:slug 为英文标识（鸿蒙 → harmony），URL 中不出现中文 */}
+            {/* 分类列表页：:slug 为英文标识（如 react → /category/react），URL 中不出现中文 */}
             <Route path="/category/:slug" element={<ArticleList />} />
             <Route path="/article/:id" element={<ArticleDetail />} />
           </Route>
