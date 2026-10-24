@@ -1,5 +1,5 @@
 -- ============================================================
--- 博客核心表：users + articles（PostgreSQL）
+-- 博客核心表：users + categories + articles（PostgreSQL）
 -- 本文件挂载到 /docker-entrypoint-initdb.d，容器首次启动时自动执行
 -- 表设计依据：doc/sql.md（与 web_react/src/types/blog.ts 口径一致）
 -- ============================================================
@@ -30,10 +30,33 @@ BEGIN
 END $$;
 
 -- ------------------------------------------------------------
--- 2) 文章表 articles
--- 说明：本次仅建 users 与 articles 两张表，categories 不在本次范围，
---      故 category_id 保留为普通 BIGINT（去掉指向 categories 的外键），
---      待后续补建 categories 表后再按需加外键；author_id 指向 users 保留外键。
+-- 2) 分类表 categories
+-- 说明：文章分类目录（Flutter / NodeJs / React / Golang / Other）。
+--       articles.category_id 指向本表；删除分类时文章保留（置空）。
+-- ------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS categories (
+  id            BIGSERIAL PRIMARY KEY,
+  name          VARCHAR(64) NOT NULL,                     -- 分类中文名（导航展示）
+  slug          VARCHAR(64) NOT NULL DEFAULT '',          -- 英文 URL 标识（flutter/nodejs/react/golang/other）
+  sort          INT NOT NULL DEFAULT 0,                   -- 排序权重，升序展示
+  article_count INT NOT NULL DEFAULT 0,                   -- 冗余计数，便于列表 / 导航直读文章数
+  created_at    TIMESTAMPTZ NOT NULL DEFAULT now()        -- 创建时间
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_categories_slug ON categories (slug);
+
+-- name 唯一约束（可选，数据库层强制）
+DO $$
+BEGIN
+  IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'uq_categories_name') THEN
+    ALTER TABLE categories ADD CONSTRAINT uq_categories_name UNIQUE (name);
+  END IF;
+END $$;
+
+-- ------------------------------------------------------------
+-- 3) 文章表 articles
+-- 说明：category_id 指向 categories(id)；author_id 指向 users(id)。
+--      删除分类 / 作者时文章保留（置空），避免误删连带清空。
 -- ------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS articles (
   id            BIGSERIAL PRIMARY KEY,
@@ -41,7 +64,7 @@ CREATE TABLE IF NOT EXISTS articles (
   summary       TEXT,
   content       TEXT,
   cover         VARCHAR(512) DEFAULT '',
-  category_id   BIGINT,
+  category_id   BIGINT REFERENCES categories(id) ON DELETE SET NULL,
   author_id     BIGINT REFERENCES users(id) ON DELETE SET NULL,
   author_name   VARCHAR(64) DEFAULT '',
   tags          VARCHAR(512) DEFAULT '',
@@ -68,7 +91,7 @@ BEGIN
 END $$;
 
 -- ------------------------------------------------------------
--- 3) updated_at 自动维护（PostgreSQL 不会自动刷新更新时间）
+-- 4) updated_at 自动维护（PostgreSQL 不会自动刷新更新时间；categories 无 updated_at，不加）
 -- ------------------------------------------------------------
 CREATE OR REPLACE FUNCTION set_updated_at()
 RETURNS TRIGGER AS $$
@@ -87,3 +110,33 @@ DROP TRIGGER IF EXISTS trg_articles_updated_at ON articles;
 CREATE TRIGGER trg_articles_updated_at
   BEFORE UPDATE ON articles
   FOR EACH ROW EXECUTE FUNCTION set_updated_at();
+
+-- ------------------------------------------------------------
+-- 5) 评论表 comments
+-- 说明：文章评论，支持楼中楼（parent_id 自引用）。
+--       is_author 标记评论者是否为文章作者 / 管理员（后端按登录态注入）。
+-- ------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS comments (
+  id          BIGSERIAL PRIMARY KEY,
+  article_id  BIGINT NOT NULL REFERENCES articles(id) ON DELETE CASCADE,
+  parent_id   BIGINT REFERENCES comments(id) ON DELETE CASCADE,
+  nickname    VARCHAR(64) NOT NULL,
+  content     TEXT NOT NULL,
+  is_author   BOOLEAN NOT NULL DEFAULT false,
+  created_at  TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS idx_comments_article ON comments (article_id);
+
+-- ------------------------------------------------------------
+-- 6) 友情链接表 friend_links
+-- 说明：站点友链；enabled 控制是否展示，sort 控制展示顺序。
+-- ------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS friend_links (
+  id        BIGSERIAL PRIMARY KEY,
+  name      VARCHAR(64) NOT NULL,
+  url       VARCHAR(512) NOT NULL,
+  desc      VARCHAR(128) DEFAULT '',
+  enabled   BOOLEAN NOT NULL DEFAULT true,
+  sort      INT NOT NULL DEFAULT 0,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);

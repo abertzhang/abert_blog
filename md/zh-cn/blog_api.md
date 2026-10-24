@@ -2,7 +2,8 @@
 title: Web API 学习文档
 create:2026-10-20
 update:2026-10-20
-category:api
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-04.jpg
 tags:[api,http,rest,blog,express,nest,golang,jwt]
 summary:Web API 的场景化学习文档，每个接口均配使用场景与前后端示例代码
 keywords:[rest,api,express,nest,golang,jwt,http,blog]

@@ -2,7 +2,8 @@
 title: Node.js 使用 MQTT 学习文档
 create:2026-10-21
 update:2026-10-21
-category:iot
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-23.jpg
 tags:[node,mqtt,iot,message,broker,backend]
 summary:Node.js 使用 MQTT 协议的学习文档，覆盖连接、发布订阅、QoS 与遗嘱消息
 keywords:[node,mqtt,iot,broker,publish-subscribe,qos]

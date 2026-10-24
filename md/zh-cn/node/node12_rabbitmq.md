@@ -2,7 +2,8 @@
 title: Node.js 操作 RabbitMQ 学习文档
 create:2026-10-21
 update:2026-10-21
-category:message-queue
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-56.jpg
 tags:[node,rabbitmq,mq,message-queue,amqp,backend]
 summary:Node.js 使用 RabbitMQ 的学习文档，覆盖连接、交换机、队列、发布订阅与工作队列
 keywords:[node,rabbitmq,mq,amqp,exchange,queue]

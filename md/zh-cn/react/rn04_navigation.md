@@ -2,7 +2,8 @@
 title: RN训练营：路由
 create:2026-10-11
 update:2026-10-13
-category:ReactNative
+category:react
+cover:https://img-common.aknot.uk/cover/land-15.jpg
 tags:[frontend,react,ReactNative,RN，组件，component]
 summary:
 keywords:[react-native,navigation,react-navigation,routing,mobile]

@@ -3,6 +3,7 @@ title: Go 语言并发编程：Goroutine 学习文档
 create:2026-10-21
 update:2026-10-21
 category:golang
+cover:https://img-common.aknot.uk/cover/land-48.jpg
 tags:[go,golang,goroutine,channel,concurrency,context,sync,atomic,worker-pool,beginner-to-advanced]
 summary:Go 语言 Goroutine 并发编程学习文档，从 go 关键字基础，到 channel / context / sync / atomic 各类同步原语，再到 worker pool、fan-out/fan-in、pipeline 等并发模式与常见坑（数据竞争、goroutine 泄漏、panic 传播、循环变量捕获），每节均含可运行示例
 keywords:[go,golang,goroutine,channel,context,sync,atomic,concurrency]

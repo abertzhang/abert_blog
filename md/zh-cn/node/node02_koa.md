@@ -2,7 +2,8 @@
 title: NodeJs训练营:Koa学习文档
 create:2026-10-12
 update:2026-10-21
-category:backend
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-27.jpg
 tags:[node,fastify,backend,web-framework,api,http]
 summary:Node.js 使用 Fastify 框架的学习文档，覆盖路由、插件、钩子、验证与序列化
 keywords:[node,fastify,backend,http,api,plugin]

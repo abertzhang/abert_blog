@@ -2,7 +2,8 @@
 title: Web API 学习文档（浏览器内置 · MDN）
 create:2026-10-20
 update:2026-10-21
-category:web-api
+category:react
+cover:https://img-common.aknot.uk/cover/land-09.jpg
 tags:[web-api,javascript,mdn,browser,frontend,dom]
 summary:基于 MDN 的浏览器内置 Web 平台 API 学习文档，每个 API 均配场景与示例代码
 keywords:[web-api,javascript,dom,mdn,browser,frontend]

@@ -2,7 +2,8 @@
 title: NestJs训练营：基础
 create:2026-10-11
 update:2026-10-12
-category:node
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-49.jpg
 tags:[node,backend]
 summary:
 keywords:[nestjs,node,backend,module,controller,dependency-injection]

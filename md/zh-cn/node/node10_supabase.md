@@ -2,7 +2,8 @@
 title: Node.js Supabase 学习文档
 create:2026-10-20
 update:2026-10-21
-category:backend
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-20.jpg
 tags:[node,supabase,postgresql,auth,storage,backend,database]
 summary:Node.js 使用 Supabase 的学习文档，覆盖 Auth/Database/Storage/Realtime/Edge Functions，含详细 API 与示例
 keywords:[node,supabase,postgresql,auth,storage,realtime,database]

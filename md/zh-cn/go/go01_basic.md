@@ -3,6 +3,7 @@ title: Go 语言基础学习文档
 create:2026-10-21
 update:2026-10-21
 category:golang
+cover:https://img-common.aknot.uk/cover/land-31.jpg
 tags:[go,golang,basic,datatype,function,slice,map,pointer,beginner]
 summary:Go 语言基础学习文档，覆盖程序结构、基础数据类型、运算符、流程控制、函数（多返回值/闭包/defer/panic）、数组/切片/映射/指针，每节均含可运行示例
 keywords:[go,golang,basic,datatype,slice,map,pointer,function]

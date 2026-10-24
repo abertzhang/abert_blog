@@ -2,7 +2,8 @@
 title: Node.js 使用 gRPC 学习文档
 create:2026-10-21
 update:2026-10-21
-category:rpc
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-35.jpg
 tags:[node,grpc,rpc,protobuf,backend,microservice]
 summary:Node.js 使用 gRPC 的学习文档，覆盖 @grpc/grpc-js、四种 RPC 类型、Metadata、TLS 与拦截器
 keywords:[node,grpc,rpc,protobuf,stream,microservice]

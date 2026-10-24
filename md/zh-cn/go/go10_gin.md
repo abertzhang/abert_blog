@@ -3,6 +3,7 @@ title: Gin 框架学习文档（Go Web 开发）
 create:2026-10-21
 update:2026-10-21
 category:golang
+cover:https://img-common.aknot.uk/cover/land-02.jpg
 tags:[go,golang,gin,web,framework,backend,rest,api]
 summary:Gin 是目前 Go 生态最流行的轻量级 Web 框架。本文从安装、路由、请求/响应、中间件、数据绑定与校验、模板渲染、文件上传、Cookie/Session、JWT、CORS、优雅关闭、GORM 集成、单元测试到 gin.Context 全量 API 速查，覆盖 Gin 几乎全部常用接口，每个接口均配可直接运行的示例代码。
 keywords:[gin,golang,go,web框架,路由,中间件,数据绑定,jwt,cors,gorm,单元测试]

@@ -2,7 +2,8 @@
 title: React训练营：基础
 create:2026-10-09
 update:2026-10-09
-category:next.js
+category:react
+cover:https://img-common.aknot.uk/cover/land-13.jpg
 tags:[frontend,web,next]
 summary:
 keywords:[react,frontend,component,vite,jsx,hook]

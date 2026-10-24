@@ -2,7 +2,8 @@
 title: Node 使用 Elasticsearch 与 Elastic Stack 学习文档
 create:2026-10-21
 update:2026-10-21
-category:search
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-10.jpg
 tags:[node,elasticsearch,elastic-stack,search,logstash,kibana,database]
 summary:Node 使用 Elasticsearch 与 Elastic Stack 的学习文档，覆盖索引、查询、聚合与日志检索
 keywords:[node,elasticsearch,search,logstash,kibana,aggregation]

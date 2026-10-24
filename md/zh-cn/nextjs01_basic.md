@@ -2,7 +2,8 @@
 title: Next.js训练营：基础
 create:2026-10-09
 update:2026-10-09
-category:next.js
+category:react
+cover:https://img-common.aknot.uk/cover/land-41.jpg
 tags:[frontend,web,next]
 summary:
 keywords:[nextjs,react,ssr,frontend,env,fullstack]

@@ -2,7 +2,8 @@
 title: Next.js 框架学习文档
 create:2026-10-22
 update:2026-10-22
-category:next.js
+category:react
+cover:https://img-common.aknot.uk/cover/land-44.jpg
 tags:[frontend,next.js,react,ssr,ssg,app-router,fullstack]
 summary:Next.js 16（App Router + React 19）从基础到进阶的完整学习文档，覆盖项目结构、路由、布局、Server/Client 组件、数据获取与缓存、Route Handlers、中间件、样式/图片/字体、Metadata、错误处理、流式渲染、Server Actions、缓存体系、认证、环境变量、并行/拦截路由、性能优化与部署，每节均含可直接运行的示例
 keywords:[next.js,react,app-router,ssr,ssg,isr,server-component,client-component,rsc,route-handler,middleware,server-actions,cache,fullstack,turbopack]

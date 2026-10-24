@@ -2,7 +2,8 @@
 title: React 常用内置 Hooks 学习文档
 create:2026-10-20
 update:2026-10-21
-category:frontend
+category:react
+cover:https://img-common.aknot.uk/cover/land-10.jpg
 tags:[react,hooks,frontend,use-state,use-effect,javascript,typescript]
 summary:React 常用内置 Hooks 学习文档，每个 Hook 均含基础示例与实战场景代码
 keywords:[react,hooks,use-state,use-effect,use-context,frontend]

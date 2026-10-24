@@ -3,6 +3,7 @@ title: Go Channel 学习文档
 create:2026-10-21
 update:2026-10-21
 category:golang
+cover:https://img-common.aknot.uk/cover/land-31.jpg
 tags:[go,golang,channel,goroutine,concurrency,csp,select,pipeline,worker-pool]
 summary:Go channel 从基础到进阶的完整学习文档，覆盖声明/缓冲/关闭/单向/select/超时/扇入扇出/Worker Pool/Pipeline/信号量限流/优雅退出/reflect.Select/死锁与泄漏排查，每节均含可直接运行的示例
 keywords:[go,golang,channel,goroutine,concurrency,select,pipeline,worker-pool,csp]

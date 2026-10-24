@@ -2,7 +2,8 @@
 title: lowdb
 create:2026-10-21
 update:2026-10-21
-category:node
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-07.jpg
 tags:[node,database,json,storage,local]
 summary: Node 使用 lowdb 本地 JSON 数据库的学习文档，覆盖 v1 与 v3 两套 API、适配器、CRUD 实战与最佳实践
 keywords:[node,lowdb,json,database,storage,local]

@@ -2,7 +2,8 @@
 title: OpenShip 使用文档
 create:2026-10-08
 update:2026-10-21
-category:tools
+category:other
+cover:https://img-common.aknot.uk/cover/land-18.jpg
 tags:[openship,shipping,logistics,tools,api]
 summary:OpenShip 使用文档，覆盖快递/物流对接、API 调用与集成
 keywords:[openship,shipping,logistics,tracking,api]

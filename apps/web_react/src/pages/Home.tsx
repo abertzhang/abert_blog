@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, type CSSProperties } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { listArticles, hotArticles, listTags } from '../api/blog'
+import { listArticles, hotArticles, listTags, getBanners } from '../api/blog'
 import SectionHeader from '../components/ui/SectionHeader'
 import Carousel, { type Slide } from '../components/Carousel'
 import ArticleCard from '../components/ArticleCard'
@@ -19,7 +19,7 @@ const SLIDE_GRADIENTS: Record<string, string> = {
   React: 'linear-gradient(135deg,#2563EB,#1D4ED8)',
   其他: 'linear-gradient(135deg,#475569,#1E293B)',
 }
-const CATEGORY_ORDER = ['Flutter', 'React', 'NodeJs', 'Golang', '其他']
+const CATEGORY_ORDER = ['Flutter', 'NodeJs', 'React', 'Golang', '其他']
 const MAX_SLIDES = 5
 
 function buildSlides(cats: Category[]): Slide[] {
@@ -280,6 +280,17 @@ export default function Home() {
   const cats = useCategories()
   const [hot, setHot] = useState<Article[]>([])
   const [tags, setTags] = useState<TagCount[]>([])
+  // 轮播图：先用分类渐变占位（即时可见），接口返回真实封面图后替换
+  const [banners, setBanners] = useState<Slide[]>(() => buildSlides(cats))
+
+  useEffect(() => {
+    getBanners(5)
+      .then((r) => {
+        const data = (r.data || []).filter((b) => b.image)
+        if (data.length) setBanners(data as Slide[])
+      })
+      .catch(() => {})
+  }, [])
 
   useEffect(() => {
     hotArticles({ limit: 20 })
@@ -332,7 +343,6 @@ export default function Home() {
   )
 
   const rest = articles.slice(0, 10)
-  const [banners] = useState<Slide[]>(() => buildSlides(cats))
 
   return (
     <div className="container-page space-y-10 py-8">

@@ -2,7 +2,8 @@
 title: RN训练营：基础
 create:2026-10-11
 update:2026-10-13
-category:ReactNative
+category:react
+cover:https://img-common.aknot.uk/cover/land-43.jpg
 tags:[frontend,react,ReactNative,RN]
 summary:
 keywords:[react-native,rn,frontend,mobile,harmony,cli]

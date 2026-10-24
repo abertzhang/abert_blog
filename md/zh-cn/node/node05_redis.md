@@ -2,7 +2,8 @@
 title: Node 使用 Redis 学习文档
 create:2026-10-21
 update:2026-10-21
-category:cache
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-31.jpg
 tags:[node,redis,cache,database,session,backend]
 summary:Node 使用 Redis 的学习文档，覆盖连接、数据结构、发布订阅与缓存模式
 keywords:[node,redis,cache,database,pub-sub,session]

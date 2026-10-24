@@ -2,7 +2,8 @@
 title: Node.js 使用 Grafana 学习文档
 create:2026-10-21
 update:2026-10-21
-category:monitoring
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-03.jpg
 tags:[node,grafana,monitoring,devops,dashboard,observability]
 summary:Node.js 配合 Grafana 做监控可视化的学习文档，覆盖数据源、面板、告警与仪表盘
 keywords:[node,grafana,monitoring,dashboard,observability,alert]

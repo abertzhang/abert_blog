@@ -2,7 +2,8 @@
 title: Node.js 使用 Express 学习文档
 create:2026-10-21
 update:2026-10-21
-category:backend
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-41.jpg
 tags:[node,express,http,middleware,routing,backend,api]
 summary:Node.js 使用 Express 框架的详细学习文档，覆盖 app/路由/中间件/Request/Response/Router/错误处理/静态文件/模板引擎/安全实践，含完整示例与 Express 5 变更说明
 keywords:[node,express,http,middleware,routing,backend,api]

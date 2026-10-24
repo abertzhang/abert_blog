@@ -87,12 +87,12 @@ CREATE TABLE IF NOT EXISTS friend_links (
 );
 
 -- 初始分类（与前端 mock / 导航顺序一致；slug 用于 URL）
--- 文章类型固定为 Flutter / React / NodeJs / Golang / 其他(Other)，
+-- 文章类型固定为 Flutter / NodeJs / React / Golang / Other（name 存中文「其他」，slug=other），
 -- 不属于前四类的文章统一归入「其他」兜底分类。
 INSERT INTO categories (name, slug, sort) VALUES
   ('Flutter', 'flutter', 1),
-  ('React',   'react',   2),
-  ('NodeJs',  'nodejs',  3),
+  ('NodeJs',  'nodejs',  2),
+  ('React',   'react',   3),
   ('Golang',  'golang',  4),
   ('其他',    'other',   99)
 ON CONFLICT DO NOTHING;

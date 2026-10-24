@@ -2,7 +2,8 @@
 title: Node.js 使用 tRPC 学习文档
 create:2026-10-21
 update:2026-10-21
-category:api
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-40.jpg
 tags:[node,trpc,api,typescript,backend,rpc]
 summary:Node.js 使用 tRPC 的学习文档，覆盖类型安全 RPC、router、procedure 与前后端一体化调用
 keywords:[node,trpc,rpc,typescript,procedure,api]

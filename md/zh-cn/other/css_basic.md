@@ -1,8 +1,9 @@
 ---
-title: MySql
+title: MySql（css_basic）
 create:2026-10-04
 update:2026-10-07
-category:node
+category:other
+cover:https://img-common.aknot.uk/cover/land-14.jpg
 tags:[database]
 summary:
 keywords:[css,stylesheet,selector,box-model,layout,basic]

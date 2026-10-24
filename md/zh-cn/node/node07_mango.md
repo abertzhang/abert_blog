@@ -2,7 +2,8 @@
 title: MangoDB
 create:2026-10-04
 update:2026-10-07
-category:node
+category:other
+cover:https://img-common.aknot.uk/cover/land-39.jpg
 tags:[database]
 summary:
 keywords:[node,mongodb,database,document,crud]

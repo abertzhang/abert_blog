@@ -2,6 +2,7 @@ import client from './client'
 import type {
   ApiEnvelope,
   Article,
+  Banner,
   Category,
   Comment,
   FriendLink,
@@ -14,7 +15,7 @@ import * as mock from '../data/mock'
 // ====== 数据源开关 ======
 // true  → 使用本地 mock 数据（无需后端，框架即可预览）
 // false → 走真实 /blog/api（后端 PostgreSQL 存储），页面代码无需改动
-export const USE_MOCK = true
+export const USE_MOCK = false
 
 // 模拟网络延迟，让加载态可见
 const delay = <T,>(v: T, ms = 200): Promise<T> => new Promise((r) => setTimeout(() => r(v), ms))
@@ -106,3 +107,10 @@ export const createFriendLink = (data: Partial<FriendLink>) =>
 export const updateFriendLink = (id: number, data: Partial<FriendLink>) =>
   client.put(`/friend-links/${id}`, data)
 export const deleteFriendLink = (id: number) => client.delete(`/friend-links/${id}`)
+
+// ---------- 首页 banner 封面图 ----------
+// 后端从 aknot 公共图床（land / car / moto 三类，编号 01~50）随机返回 count 张。
+export const getBanners = (count = 5): Promise<ApiEnvelope<Banner[]>> =>
+  USE_MOCK
+    ? ok(Array.from({ length: count }, () => ({ image: '', category: '其他' })))
+    : client.get('/banners', { params: { count } })

@@ -1,8 +1,9 @@
 ---
-title: MySql
+title: MySql（css_advanced）
 create:2026-10-04
 update:2026-10-07
-category:node
+category:other
+cover:https://img-common.aknot.uk/cover/land-60.jpg
 tags:[database]
 summary:
 keywords:[css,stylesheet,layout,flexbox,grid,animation,responsive,selector]

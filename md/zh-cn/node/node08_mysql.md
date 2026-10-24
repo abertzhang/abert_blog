@@ -2,7 +2,8 @@
 title: MySql
 create:2026-10-04
 update:2026-10-07
-category:node
+category:other
+cover:https://img-common.aknot.uk/cover/land-10.jpg
 tags:[database]
 summary:
 keywords:[node,mysql,database,sql,docker,rdbms]

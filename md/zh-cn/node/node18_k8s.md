@@ -2,7 +2,8 @@
 title: Node.js 使用 Kubernetes 学习文档
 create:2026-10-21
 update:2026-10-21
-category:devops
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-15.jpg
 tags:[node,kubernetes,k8s,devops,container,docker,backend]
 summary:Node.js 服务部署到 Kubernetes 的学习文档，覆盖 Pod、Deployment、Service、Ingress 与运维
 keywords:[node,kubernetes,k8s,docker,deployment,container,devops]

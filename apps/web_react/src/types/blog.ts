@@ -95,3 +95,13 @@ export interface ApiEnvelope<T> {
   msg: string
   data: T
 }
+
+/** 首页轮播 banner 封面图（后端 /banners 返回） */
+export interface Banner {
+  /** 封面图完整 URL */
+  image: string
+  /** 类型名（Land / Car / Moto），用作轮播标签与指示点配色兜底 */
+  category: string
+  /** 可选跳转链接，缺省时 banner 不可点击 */
+  href?: string
+}

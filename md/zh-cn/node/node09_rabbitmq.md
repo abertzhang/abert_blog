@@ -2,7 +2,8 @@
 title: Express Framework
 create:2026-10-04
 update:2026-10-07
-category:node
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-58.jpg
 tags:[http,node,server]
 summary:
 keywords:[node,rabbitmq,mq,amqp,docker,message-queue]

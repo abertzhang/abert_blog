@@ -2,7 +2,8 @@
 title: Node.js 操作 PostgreSQL 学习文档
 create:2026-10-21
 update:2026-10-21
-category:database
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-56.jpg
 tags:[node,postgresql,database,pg,sql,backend]
 summary:Node.js 使用 node-postgres(pg) 操作 PostgreSQL 的详细学习文档，覆盖连接、查询、事务、连接池、批量与流式
 keywords:[node,postgresql,database,pg,sql,query,transaction]

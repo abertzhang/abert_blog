@@ -2,7 +2,8 @@
 title: NestJS 框架学习文档
 create:2026-10-22
 update:2026-10-22
-category:backend
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-30.jpg
 tags:[node,nestjs,backend,framework,typescript,dependency-injection,decorator]
 summary:NestJS 框架从基础到进阶的完整学习文档（基于 NestJS 12），覆盖设计哲学、CLI 与项目结构、Module/Controller/Provider/DI、DTO 与 ValidationPipe、Pipe/Guard/Interceptor/ExceptionFilter/Middleware 全套 AOP、自定义 Provider 与作用域、动态模块、生命周期钩子、Config/数据库(TypeORM)/JWT 认证/缓存/调度/WebSocket/微服务/日志/测试，每节均含可直接运行的示例
 keywords:[node,nestjs,backend,framework,typescript,dependency-injection,decorator,module,controller]

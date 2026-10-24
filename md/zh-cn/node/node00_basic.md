@@ -2,7 +2,8 @@
 title: Node.js 基础语法学习文档
 create:2026-10-22
 update:2026-10-22
-category:backend
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-11.jpg
 tags:[node,javascript,runtime,module,async,eventloop,stream,backend,basic]
 summary:Node.js 基础语法与核心 API 的完整学习文档（基于 Node 24 LTS），覆盖运行时与事件循环、CommonJS/ESM 双模块系统、全局对象、定时器、Buffer、fs/path/events/stream、异步演进(Promise/async-await)、错误处理、util、child_process、crypto、http、调试、cluster 多进程与 worker_threads 多线程，每节均含可直接运行的示例
 keywords:[node,javascript,runtime,module,commonjs,esm,async,eventloop,stream,buffer,backend]

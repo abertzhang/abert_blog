@@ -2,7 +2,8 @@
 title: Node.js 使用 Prometheus 学习文档
 create:2026-10-21
 update:2026-10-21
-category:monitoring
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-30.jpg
 tags:[node,prometheus,monitoring,devops,metrics,observability]
 summary:Node.js 使用 Prometheus 监控的学习文档，覆盖 prom-client 指标类型、Exporter、PromQL 与告警
 keywords:[node,prometheus,monitoring,metrics,observability,exporter]

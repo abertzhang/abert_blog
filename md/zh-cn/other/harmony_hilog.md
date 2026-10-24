@@ -2,7 +2,8 @@
 title: 鸿蒙hilog常用命令
 create:2026-10-19
 update:2026-10-19
-category:node
+category:other
+cover:https://img-common.aknot.uk/cover/land-34.jpg
 tags:[harmony,log,hilog,tip,hdc]
 summary:hilog的常用场景命令集合
 keywords:[harmonyos,hilog,logging,log,debug,command]

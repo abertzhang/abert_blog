@@ -2,7 +2,8 @@
 title: Node.js 使用 GraphQL 学习文档
 create:2026-10-21
 update:2026-10-21
-category:api
+category:nodejs
+cover:https://img-common.aknot.uk/cover/land-59.jpg
 tags:[node,graphql,api,backend,yoga,apollo]
 summary:Node.js 使用 GraphQL 的学习文档，覆盖 Schema、Resolver、服务端、客户端、订阅与 DataLoader
 keywords:[node,graphql,api,resolver,schema,subscription]
