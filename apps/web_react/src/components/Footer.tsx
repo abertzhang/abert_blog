@@ -64,7 +64,7 @@ export default function Footer() {
 
       <div className="border-t border-ink-200/70">
         <div className="container-page flex flex-col items-center justify-between gap-3 py-4 text-xs text-ink-400 sm:flex-row">
-          <div>© {copyright} 一码平川. All rights reserved.</div>
+          <div>© {copyright} 行云流水. All rights reserved.</div>
           <div className="flex items-center gap-4">
             <a href="#" className="hover:text-primary">
               京ICP备XXXXXXXX号-1

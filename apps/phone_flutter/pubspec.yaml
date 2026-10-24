@@ -35,6 +35,12 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
+  # HTTP 客户端：请求 api_express 博客后台（/blog/api）
+  http: ^1.6.0
+
+  # Markdown 渲染：文章正文来自 md/zh-cn 文档，详情页按 Markdown 展示
+  flutter_markdown: ^0.7.7+1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

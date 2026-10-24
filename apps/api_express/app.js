@@ -30,6 +30,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// ---- CORS：允许 Flutter Web / 浏览器端跨域访问 /blog/api ----
+// 移动端（iOS / Android）原生 HTTP 请求不受浏览器同源策略约束，无需此配置；
+// 这里为零依赖手写实现，覆盖预检（OPTIONS）与简单请求两种场景。
+app.use('/blog/api', (req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization');
+  if (req.method === 'OPTIONS') return res.sendStatus(204);
+  next();
+});
+
 // ---- Swagger 文档（独立于 /blog/api，便于调试）----
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 

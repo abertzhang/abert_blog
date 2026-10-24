@@ -94,7 +94,7 @@ export default function Login() {
           <Logo className="text-lg" />
         </div>
         <h1 className="text-center text-xl font-bold text-ink-900">管理后台登录</h1>
-        <p className="mb-5 mt-1.5 text-center text-sm text-ink-400">登录一码平川，管理文章与评论</p>
+        <p className="mb-5 mt-1.5 text-center text-sm text-ink-400">登录行云流水，管理文章与评论</p>
 
         {SMS_LOGIN_ENABLED && (
           <div className="mb-6 flex border-b border-ink-200/70">
@@ -171,7 +171,7 @@ export default function Login() {
         </form>
 
         <p className="mt-6 text-center text-xs leading-5 text-ink-400">
-          登录即代表您同意一码平川的
+          登录即代表您同意行云流水的
           <a href="#" className="link-primary mx-1">
             服务条款
           </a>

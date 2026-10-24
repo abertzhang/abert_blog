@@ -169,14 +169,15 @@ export default function ArticleDetail() {
 
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <article className="space-y-6 lg:col-span-2">
-          <div className="card p-8">
+          <div className="card overflow-hidden p-0">
             {article.cover && (
               <img
                 src={article.cover}
                 alt={article.title}
-                className="-mx-8 -mt-8 mb-6 aspect-[16/9] w-[calc(100%+4rem)] object-cover"
+                className="aspect-[16/9] w-full object-cover"
               />
             )}
+            <div className="p-8">
             <div className="mb-3 flex items-center gap-2">
               <CategoryBadge name={article.category_name} />
               {article.tags
@@ -238,6 +239,7 @@ export default function ArticleDetail() {
                   </button>
                 ))}
               </div>
+            </div>
             </div>
           </div>
 
