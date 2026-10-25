@@ -57,11 +57,15 @@ flutter run                               # 选择已连接的设备 / 模拟器
 ## 验证
 
 ```bash
-flutter analyze        # 静态检查
-flutter test           # 模型解析 + 组件渲染测试（7 个用例）
-dart run tool/api_smoke.dart   # 联调冒烟：直连真实后端跑通 分类/列表/详情/热门
-flutter build web --release    # 编译验证
+flutter analyze                    # 静态检查
+flutter test                       # 8 个用例：模型解析 + 组件渲染 + 联调冒烟
+flutter test test/api_smoke_test.dart   # 只跑联调冒烟：直连真实后端跑通 分类/列表/详情/热门
+flutter build web --release        # 编译验证
 ```
+
+> 联调冒烟放在 `test/` 而非 `tool/`：`api_client.dart` 引用了 `package:flutter/foundation.dart`（kIsWeb），
+> 纯 `dart run`（VM 模式）下 `dart:ui` 不可用会编译失败，`flutter test` 的测试平台自带 dart:ui。
+> 冒烟依赖真实后端在线（api_express :3001 + postgres 5433），后端未启动时该用例失败属预期。
 
 登录 / 评论 / 后台管理接口后端已具备，但界面稿未包含对应页面，暂未实现；
 后续如需，在 `services/blog_api.dart` 基础上扩展即可。
